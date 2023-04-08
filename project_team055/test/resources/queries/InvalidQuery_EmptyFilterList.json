@@ -1,0 +1,18 @@
+{
+  "title": "invalid query - empty FILTER LIST",
+  "input": {
+    "WHERE": {
+      "AND": [
+        ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_avg",
+        "sections_id"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

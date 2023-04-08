@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Page</title>
+	<link rel="stylesheet" href="adminPage.css" />
+</head>
+<body>
+<div style="background-color: #D8675E; width: 1420px; height: 20000px">
+	<div class="adminBigPage">
+		<div>
+			<h1 class="heading"> What dataset would you like to remove? </h1>
+			<button class="home" onclick="goToMain()">Home</button>
+			<button class="list" onclick="listDSets()">List Current Datasets</button>
+
+			<form>
+				<label for="id" class="form"> Dataset ID String: </label>
+				<input type="text" name="id" id="id" class="input">
+			</form>
+			<button class="remove" onclick="removeDSets()">Remove</button>
+			<p class="setList" id="setList"></p>
+		</div>
+	</div>
+</div>
+<script>
+	// START SERVER BEFORE RUNNING !
+	function goToMain() {
+		window.location.href = "index.html";
+	}
+	// CITATION: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started
+	// USE: used to format delete request for server
+	function removeDSets() {
+		const input = document.getElementById("id").value
+		console.log(document.getElementById("id").value);
+		const httpReq = new XMLHttpRequest();
+		httpReq.onreadystatechange = () => {
+			// process response from server-->
+			let htmlStr = "";
+			if (httpReq.readyState === XMLHttpRequest.DONE) {
+				if (httpReq.status === 200) {
+					// EFFECTS: receives a list of insight results and returns it in html form
+					// // CITATION: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+					// // USE: used to create a new html element
+					htmlStr = "Dataset " + "<b>" + JSON.parse(httpReq.response).result + "</b>" + " has successfully been removed!";
+				} else if(httpReq.status === 404) {
+					htmlStr = "Oh no! 404 Not Found <br> Looks like the dataset you are trying to remove <br> does not exist in our system :("
+				} else if(httpReq.status === 400) {
+					htmlStr = "Oh no! <br> It seems like you have entered an invalid id string, try again."
+				}
+				document.getElementById("setList").innerHTML = htmlStr;
+			}
+		}
+		httpReq.open("DELETE", "http://localhost:4321/dataset/"+ input);
+		httpReq.send();
+	}
+
+	// CITATION: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started
+	// USE: used to format get request for server
+	// make a get request to the server
+	function listDSets() {
+		const httpReq = new XMLHttpRequest();
+		httpReq.onreadystatechange = () => {
+			// process response from server-->
+			if (httpReq.readyState === XMLHttpRequest.DONE) {
+				if (httpReq.status === 200) { // listDSet only resolves (has no 400 error)
+					// EFFECTS: receives a list of insight results and returns it in html form
+					// CITATION: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+					// USE: used to create a new html element
+					let htmlString = "";
+					for(const insightResult of JSON.parse(httpReq.response).result) {
+						htmlString = htmlString + "<b>id: </b>" + insightResult.id + "<br>";
+						htmlString = htmlString + "<b>kind: </b>" + insightResult.kind + "<br>";
+						htmlString = htmlString + "<b>Number of Rows: </b>" + insightResult.numRows + "<br> <br>";
+					}
+					document.getElementById("setList").innerHTML = htmlString;
+				}
+			}
+		}
+		httpReq.open("GET", "http://localhost:4321/datasets");
+		httpReq.send();
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "title": "invalid key : overallAvg (applyKey) cannot be present in two applyRules",
+  "input": {
+
+	  "WHERE": {},
+
+	  "OPTIONS": {
+
+		  "COLUMNS": ["sections_title", "overallAvg"]
+
+	  },
+
+	  "TRANSFORMATIONS": {
+
+		  "GROUP": ["sections_title"],
+
+		  "APPLY": [{
+
+			  "overallAvg": {
+
+				  "AVG": "sections_avg"
+
+			  }
+
+		  }, {
+
+				  "overallAvg": {
+
+					  "AVG": "sections_year"
+
+				  }
+
+			  }]
+
+	  }
+
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

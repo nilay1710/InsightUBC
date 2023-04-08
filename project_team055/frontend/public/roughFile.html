@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pop-up Example</title>
+</head>
+<body>
+<button onclick="showPopUp()">Click me!</button>
+
+<div id="popUp" style="display:none;">
+	<p>This is a pop-up box!</p>
+</div>
+
+<script>
+	function showPopUp() {
+		var popUp = document.getElementById("popUp");
+		popUp.style.display = "block";
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+	"title": "Logic_with_one_and_three_filters_rooms",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"IS": {
+								"rooms_furniture": "*Tables*"
+							}
+						}
+					]
+				},
+				{
+					"GT": {
+						"rooms_seats": 300
+					}
+				},
+				{
+					"LT": {
+						"rooms_seats": 400
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_shortname": "HEBB"
+		},
+		{
+			"rooms_shortname": "LSC"
+		},
+		{
+			"rooms_shortname": "LSC"
+		}
+	]
+}

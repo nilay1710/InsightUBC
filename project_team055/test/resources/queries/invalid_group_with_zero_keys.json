@@ -1,0 +1,39 @@
+{
+	"title": "invalid_group_with_zero_keys",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"Min",
+				"Sum",
+				"sections_instructor"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [],
+			"APPLY": [
+				{
+					"Min": {
+						"MIN": "sections_instructor"
+					}
+				},
+				{
+					"Sum": {
+						"SUM": "sections_avg"
+					}
+				},
+				{
+					"count": {
+						"COUNT": "sections_instructor"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

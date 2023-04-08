@@ -1,0 +1,16 @@
+{
+  "title": "invalid query - no key is listed in the COLUMNS",
+  "input": {
+    "WHERE": {
+      "IS": {
+        "sections_v": "110"
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

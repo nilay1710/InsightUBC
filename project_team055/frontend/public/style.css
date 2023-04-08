@@ -1,0 +1,64 @@
+/*CITATION: https://www.w3schools.com/css/default.asp
+ USE: used for css styling*/
+
+.bigPage{
+	background-color: #E1EFFF;
+	background-image: url("frontEndGraphics/homePage.jpg");
+	height: 830px;
+	max-width: 1500px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.logo{
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	left: 300px;
+	top: 100px;
+}
+
+.heading1{
+	font-family: "Times New Roman", serif;
+	font-size: 50px;
+	color: #19406D;
+	position: absolute;
+	left: 150px;
+	top: 320px;
+}
+
+.admin {
+	background-color: #004AAD;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 460px;
+	top: 420px;
+}
+
+.student {
+	border-radius: 30px;
+	background-color: #004AAD;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 300px;
+	top: 420px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+

@@ -1,0 +1,1107 @@
+{
+  "title": "valid",
+  "input": {
+	  "WHERE": {
+		  "OR": [
+			  {
+				  "AND": [
+					  {
+						  "GT": {
+							  "sections_pass": 80
+						  }
+					  },
+					  {
+						  "LT": {
+							  "sections_pass": 81
+						  }
+					  }
+				  ]
+			  },
+			  {
+				  "EQ": {
+					  "sections_pass": 57
+				  }
+			  }
+		  ]
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "sections_title",
+			  "sections_dept",
+			  "maxAverage",
+			  "minAverage"
+		  ],
+		  "ORDER": {
+			  "dir": "DOWN",
+			  "keys": [
+				  "sections_dept"
+			  ]
+		  }
+	  },
+	  "TRANSFORMATIONS": {
+		  "GROUP": [
+			  "sections_dept",
+			  "sections_title"
+		  ],
+		  "APPLY": [
+			  {
+				  "maxAverage": {
+					  "MAX": "sections_avg"
+				  }
+			  },
+			  {
+				  "minAverage": {
+					  "MIN": "sections_avg"
+				  }
+			  }
+		  ]
+	  }
+  },
+  "errorExpected": false,
+  "expected": [
+	  {
+		  "sections_title": "cntmpry theories",
+		  "sections_dept": "arch",
+		  "maxAverage": 80.51,
+		  "minAverage": 80.51
+	  },
+	  {
+		  "sections_title": "eur arch",
+		  "sections_dept": "arth",
+		  "maxAverage": 71.17,
+		  "minAverage": 71.17
+	  },
+	  {
+		  "sections_title": "mod/pmod art chi",
+		  "sections_dept": "arth",
+		  "maxAverage": 77.53,
+		  "minAverage": 77.53
+	  },
+	  {
+		  "sections_title": "northcoast peo",
+		  "sections_dept": "arth",
+		  "maxAverage": 81.81,
+		  "minAverage": 81.07
+	  },
+	  {
+		  "sections_title": "chin lit trns:vr",
+		  "sections_dept": "asia",
+		  "maxAverage": 70.4,
+		  "minAverage": 70.4
+	  },
+	  {
+		  "sections_title": "chinese cinema",
+		  "sections_dept": "asia",
+		  "maxAverage": 68.57,
+		  "minAverage": 68.57
+	  },
+	  {
+		  "sections_title": "sanskrit cosmop",
+		  "sections_dept": "asia",
+		  "maxAverage": 86.24,
+		  "minAverage": 86.05
+	  },
+	  {
+		  "sections_title": "issues arts&sci",
+		  "sections_dept": "asic",
+		  "maxAverage": 77.14,
+		  "minAverage": 77.14
+	  },
+	  {
+		  "sections_title": "can,japn&pc poli",
+		  "sections_dept": "astu",
+		  "maxAverage": 69.77,
+		  "minAverage": 69.77
+	  },
+	  {
+		  "sections_title": "commun busns prj",
+		  "sections_dept": "ba",
+		  "maxAverage": 83.88,
+		  "minAverage": 83.88
+	  },
+	  {
+		  "sections_title": "ethics&sustnblty",
+		  "sections_dept": "ba",
+		  "maxAverage": 80.96,
+		  "minAverage": 80.96
+	  },
+	  {
+		  "sections_title": "glbl iss&macecon",
+		  "sections_dept": "ba",
+		  "maxAverage": 81.91,
+		  "minAverage": 81.91
+	  },
+	  {
+		  "sections_title": "decision making",
+		  "sections_dept": "ba",
+		  "maxAverage": 81.21,
+		  "minAverage": 81.21
+	  },
+	  {
+		  "sections_title": "cost anl dec mkg",
+		  "sections_dept": "baac",
+		  "maxAverage": 77.07,
+		  "minAverage": 77.07
+	  },
+	  {
+		  "sections_title": "fndtns  accnting",
+		  "sections_dept": "baac",
+		  "maxAverage": 81.46,
+		  "minAverage": 81.46
+	  },
+	  {
+		  "sections_title": "tech entrprnrshp",
+		  "sections_dept": "baen",
+		  "maxAverage": 82.63,
+		  "minAverage": 82.63
+	  },
+	  {
+		  "sections_title": "fund entrpreneur",
+		  "sections_dept": "baen",
+		  "maxAverage": 82.7,
+		  "minAverage": 82.7
+	  },
+	  {
+		  "sections_title": "2 party negotns",
+		  "sections_dept": "bahr",
+		  "maxAverage": 77.63,
+		  "minAverage": 77.63
+	  },
+	  {
+		  "sections_title": "info tech mgmt",
+		  "sections_dept": "bait",
+		  "maxAverage": 83.74,
+		  "minAverage": 83.74
+	  },
+	  {
+		  "sections_title": "commercial law",
+		  "sections_dept": "bala",
+		  "maxAverage": 79.51,
+		  "minAverage": 72.56
+	  },
+	  {
+		  "sections_title": "mrkt research",
+		  "sections_dept": "bama",
+		  "maxAverage": 80.53,
+		  "minAverage": 80.53
+	  },
+	  {
+		  "sections_title": "oper & log",
+		  "sections_dept": "bams",
+		  "maxAverage": 77.91,
+		  "minAverage": 77.91
+	  },
+	  {
+		  "sections_title": "govrnt & busness",
+		  "sections_dept": "bapa",
+		  "maxAverage": 80.67,
+		  "minAverage": 80.67
+	  },
+	  {
+		  "sections_title": "intr lgstcs&oprt",
+		  "sections_dept": "basc",
+		  "maxAverage": 80.6,
+		  "minAverage": 80.6
+	  },
+	  {
+		  "sections_title": "supply chain mng",
+		  "sections_dept": "basc",
+		  "maxAverage": 84.18,
+		  "minAverage": 84.18
+	  },
+	  {
+		  "sections_title": "intr modern bio",
+		  "sections_dept": "biol",
+		  "maxAverage": 71.09,
+		  "minAverage": 71.09
+	  },
+	  {
+		  "sections_title": "cell & orgsml bio",
+		  "sections_dept": "biol",
+		  "maxAverage": 65.9,
+		  "minAverage": 65.9
+	  },
+	  {
+		  "sections_title": "animal behaviour",
+		  "sections_dept": "biol",
+		  "maxAverage": 78.61,
+		  "minAverage": 78.61
+	  },
+	  {
+		  "sections_title": "zoogeography",
+		  "sections_dept": "biol",
+		  "maxAverage": 81.54,
+		  "minAverage": 78.26
+	  },
+	  {
+		  "sections_title": "intr fncl acct",
+		  "sections_dept": "busi",
+		  "maxAverage": 72.95,
+		  "minAverage": 72.95
+	  },
+	  {
+		  "sections_title": "cost accounting",
+		  "sections_dept": "busi",
+		  "maxAverage": 73.42,
+		  "minAverage": 73.42
+	  },
+	  {
+		  "sections_title": "business finc",
+		  "sections_dept": "busi",
+		  "maxAverage": 72.03,
+		  "minAverage": 64.48
+	  },
+	  {
+		  "sections_title": "intr busnss law",
+		  "sections_dept": "busi",
+		  "maxAverage": 65.06,
+		  "minAverage": 65.06
+	  },
+	  {
+		  "sections_title": "com prop anal",
+		  "sections_dept": "busi",
+		  "maxAverage": 75.24,
+		  "minAverage": 75.24
+	  },
+	  {
+		  "sections_title": "assess admin",
+		  "sections_dept": "busi",
+		  "maxAverage": 71.69,
+		  "minAverage": 71.69
+	  },
+	  {
+		  "sections_title": "intm fnc acct ii",
+		  "sections_dept": "busi",
+		  "maxAverage": 71.19,
+		  "minAverage": 70.67
+	  },
+	  {
+		  "sections_title": "case appraisl ii",
+		  "sections_dept": "busi",
+		  "maxAverage": 84.09,
+		  "minAverage": 84.09
+	  },
+	  {
+		  "sections_title": "adv accounting",
+		  "sections_dept": "busi",
+		  "maxAverage": 75.61,
+		  "minAverage": 72.73
+	  },
+	  {
+		  "sections_title": "prin audit",
+		  "sections_dept": "busi",
+		  "maxAverage": 80.67,
+		  "minAverage": 72.1
+	  },
+	  {
+		  "sections_title": "incom prop study",
+		  "sections_dept": "busi",
+		  "maxAverage": 72,
+		  "minAverage": 72
+	  },
+	  {
+		  "sections_title": "org chem lab",
+		  "sections_dept": "chem",
+		  "maxAverage": 69.63,
+		  "minAverage": 69.63
+	  },
+	  {
+		  "sections_title": "integ chem lab i",
+		  "sections_dept": "chem",
+		  "maxAverage": 71.8,
+		  "minAverage": 71.8
+	  },
+	  {
+		  "sections_title": "basic chin ii 2",
+		  "sections_dept": "chin",
+		  "maxAverage": 75.04,
+		  "minAverage": 75.04
+	  },
+	  {
+		  "sections_title": "ad chin r&wr i",
+		  "sections_dept": "chin",
+		  "maxAverage": 73.68,
+		  "minAverage": 73.68
+	  },
+	  {
+		  "sections_title": "adv chin r&wr ii",
+		  "sections_dept": "chin",
+		  "maxAverage": 74.88,
+		  "minAverage": 74.88
+	  },
+	  {
+		  "sections_title": "class chin 1",
+		  "sections_dept": "chin",
+		  "maxAverage": 71.66,
+		  "minAverage": 71.66
+	  },
+	  {
+		  "sections_title": "class chin 2",
+		  "sections_dept": "chin",
+		  "maxAverage": 72.33,
+		  "minAverage": 72.33
+	  },
+	  {
+		  "sections_title": "clas poet tang",
+		  "sections_dept": "chin",
+		  "maxAverage": 77.89,
+		  "minAverage": 77.89
+	  },
+	  {
+		  "sections_title": "mod chin lit 1",
+		  "sections_dept": "chin",
+		  "maxAverage": 78.25,
+		  "minAverage": 76.05
+	  },
+	  {
+		  "sections_title": "ancient greece",
+		  "sections_dept": "clst",
+		  "maxAverage": 72.15,
+		  "minAverage": 72.15
+	  },
+	  {
+		  "sections_title": "ancient history",
+		  "sections_dept": "clst",
+		  "maxAverage": 79.56,
+		  "minAverage": 79.56
+	  },
+	  {
+		  "sections_title": "greek religion",
+		  "sections_dept": "clst",
+		  "maxAverage": 74.33,
+		  "minAverage": 74.33
+	  },
+	  {
+		  "sections_title": "career counselng",
+		  "sections_dept": "cnps",
+		  "maxAverage": 90.89,
+		  "minAverage": 90.89
+	  },
+	  {
+		  "sections_title": "fmly ed & consul",
+		  "sections_dept": "cnps",
+		  "maxAverage": 86.7,
+		  "minAverage": 86.7
+	  },
+	  {
+		  "sections_title": "int thry counsel",
+		  "sections_dept": "cnps",
+		  "maxAverage": 80.44,
+		  "minAverage": 80.44
+	  },
+	  {
+		  "sections_title": "guid pln dcsn mk",
+		  "sections_dept": "cnps",
+		  "maxAverage": 78.49,
+		  "minAverage": 77.74
+	  },
+	  {
+		  "sections_title": "psnl soc dv adlt",
+		  "sections_dept": "cnps",
+		  "maxAverage": 85.98,
+		  "minAverage": 85.98
+	  },
+	  {
+		  "sections_title": "log&ops managmnt",
+		  "sections_dept": "comm",
+		  "maxAverage": 76.56,
+		  "minAverage": 76.56
+	  },
+	  {
+		  "sections_title": "appl stat in bus",
+		  "sections_dept": "comm",
+		  "maxAverage": 73.5,
+		  "minAverage": 73.5
+	  },
+	  {
+		  "sections_title": "intro marketing",
+		  "sections_dept": "comm",
+		  "maxAverage": 80.54,
+		  "minAverage": 73.59
+	  },
+	  {
+		  "sections_title": "intro to finance",
+		  "sections_dept": "comm",
+		  "maxAverage": 71.53,
+		  "minAverage": 71.53
+	  },
+	  {
+		  "sections_title": "intro to e-busi",
+		  "sections_dept": "comm",
+		  "maxAverage": 76.61,
+		  "minAverage": 76.61
+	  },
+	  {
+		  "sections_title": "commercial law",
+		  "sections_dept": "comm",
+		  "maxAverage": 73.24,
+		  "minAverage": 68.15
+	  },
+	  {
+		  "sections_title": "busi process&ops",
+		  "sections_dept": "comm",
+		  "maxAverage": 79.12,
+		  "minAverage": 78.65
+	  },
+	  {
+		  "sections_title": "negotiation",
+		  "sections_dept": "comm",
+		  "maxAverage": 82.04,
+		  "minAverage": 82.04
+	  },
+	  {
+		  "sections_title": "ship&intn'l log",
+		  "sections_dept": "comm",
+		  "maxAverage": 78.82,
+		  "minAverage": 78.82
+	  },
+	  {
+		  "sections_title": "conservat'n biol",
+		  "sections_dept": "cons",
+		  "maxAverage": 77.54,
+		  "minAverage": 77.54
+	  },
+	  {
+		  "sections_title": "aborignl forestr",
+		  "sections_dept": "cons",
+		  "maxAverage": 81.18,
+		  "minAverage": 81.18
+	  },
+	  {
+		  "sections_title": "fish cons/mgmt",
+		  "sections_dept": "cons",
+		  "maxAverage": 79.3,
+		  "minAverage": 79.3
+	  },
+	  {
+		  "sections_title": "intro comp sys",
+		  "sections_dept": "cpsc",
+		  "maxAverage": 64.62,
+		  "minAverage": 64.62
+	  },
+	  {
+		  "sections_title": "softwr eng proj",
+		  "sections_dept": "cpsc",
+		  "maxAverage": 88.39,
+		  "minAverage": 88.39
+	  },
+	  {
+		  "sections_title": "dentistry lv",
+		  "sections_dept": "dent",
+		  "maxAverage": 81.05,
+		  "minAverage": 81.05
+	  },
+	  {
+		  "sections_title": "econ data",
+		  "sections_dept": "econ",
+		  "maxAverage": 69.77,
+		  "minAverage": 69.77
+	  },
+	  {
+		  "sections_title": "wea pov nation",
+		  "sections_dept": "econ",
+		  "maxAverage": 74.11,
+		  "minAverage": 74.11
+	  },
+	  {
+		  "sections_title": "poverty&ineqalty",
+		  "sections_dept": "econ",
+		  "maxAverage": 77.12,
+		  "minAverage": 77.12
+	  },
+	  {
+		  "sections_title": "mtds empirc resr",
+		  "sections_dept": "econ",
+		  "maxAverage": 77.92,
+		  "minAverage": 77.92
+	  },
+	  {
+		  "sections_title": "fer/fam/hum mig",
+		  "sections_dept": "econ",
+		  "maxAverage": 79.14,
+		  "minAverage": 79.14
+	  },
+	  {
+		  "sections_title": "econ hist us",
+		  "sections_dept": "econ",
+		  "maxAverage": 78.1,
+		  "minAverage": 78.1
+	  },
+	  {
+		  "sections_title": "nonrenew resrces",
+		  "sections_dept": "econ",
+		  "maxAverage": 75.91,
+		  "minAverage": 75.91
+	  },
+	  {
+		  "sections_title": "macro economics",
+		  "sections_dept": "econ",
+		  "maxAverage": 81.32,
+		  "minAverage": 81.32
+	  },
+	  {
+		  "sections_title": "rsc trd edu admn",
+		  "sections_dept": "edst",
+		  "maxAverage": 87.88,
+		  "minAverage": 87.88
+	  },
+	  {
+		  "sections_title": "language & curr",
+		  "sections_dept": "educ",
+		  "maxAverage": 69,
+		  "minAverage": 69
+	  },
+	  {
+		  "sections_title": "lit brit 18c+",
+		  "sections_dept": "engl",
+		  "maxAverage": 78.26,
+		  "minAverage": 78.26
+	  },
+	  {
+		  "sections_title": "tech writing",
+		  "sections_dept": "engl",
+		  "maxAverage": 77.27,
+		  "minAverage": 77.27
+	  },
+	  {
+		  "sections_title": "exper techniques",
+		  "sections_dept": "enph",
+		  "maxAverage": 77.97,
+		  "minAverage": 77.97
+	  },
+	  {
+		  "sections_title": "eng phys prj1",
+		  "sections_dept": "enph",
+		  "maxAverage": 84.63,
+		  "minAverage": 80.93
+	  },
+	  {
+		  "sections_title": "eng phys prj ii",
+		  "sections_dept": "enph",
+		  "maxAverage": 82.86,
+		  "minAverage": 82.86
+	  },
+	  {
+		  "sections_title": "ocean environmnt",
+		  "sections_dept": "eosc",
+		  "maxAverage": 70.79,
+		  "minAverage": 70.79
+	  },
+	  {
+		  "sections_title": "ocean ecosystem",
+		  "sections_dept": "eosc",
+		  "maxAverage": 81.7,
+		  "minAverage": 76.65
+	  },
+	  {
+		  "sections_title": "sedimentology",
+		  "sections_dept": "eosc",
+		  "maxAverage": 71.86,
+		  "minAverage": 71.86
+	  },
+	  {
+		  "sections_title": "intro fish scien",
+		  "sections_dept": "eosc",
+		  "maxAverage": 71.62,
+		  "minAverage": 71.62
+	  },
+	  {
+		  "sections_title": "lrn'g disablties",
+		  "sections_dept": "epse",
+		  "maxAverage": 89.26,
+		  "minAverage": 89.26
+	  },
+	  {
+		  "sections_title": "typ atyp inf/ch",
+		  "sections_dept": "epse",
+		  "maxAverage": 93.3,
+		  "minAverage": 93.3
+	  },
+	  {
+		  "sections_title": "des tech",
+		  "sections_dept": "etec",
+		  "maxAverage": 91.33,
+		  "minAverage": 91.33
+	  },
+	  {
+		  "sections_title": "intr mtn pct dir",
+		  "sections_dept": "fipr",
+		  "maxAverage": 81.74,
+		  "minAverage": 81.74
+	  },
+	  {
+		  "sections_title": "plan&prof practc",
+		  "sections_dept": "fipr",
+		  "maxAverage": 75.02,
+		  "minAverage": 75.02
+	  },
+	  {
+		  "sections_title": "human sexuality",
+		  "sections_dept": "fmst",
+		  "maxAverage": 73.58,
+		  "minAverage": 73.58
+	  },
+	  {
+		  "sections_title": "nutr conc & cont",
+		  "sections_dept": "fnh",
+		  "maxAverage": 76.42,
+		  "minAverage": 76.42
+	  },
+	  {
+		  "sections_title": "nu met imp hlth",
+		  "sections_dept": "fnh",
+		  "maxAverage": 80.53,
+		  "minAverage": 80.53
+	  },
+	  {
+		  "sections_title": "beginner fren i",
+		  "sections_dept": "fren",
+		  "maxAverage": 72.25,
+		  "minAverage": 72.25
+	  },
+	  {
+		  "sections_title": "intermed fren 1",
+		  "sections_dept": "fren",
+		  "maxAverage": 75.09,
+		  "minAverage": 75.09
+	  },
+	  {
+		  "sections_title": "silviculture",
+		  "sections_dept": "frst",
+		  "maxAverage": 76.81,
+		  "minAverage": 76.81
+	  },
+	  {
+		  "sections_title": "intl forestry",
+		  "sections_dept": "frst",
+		  "maxAverage": 76.12,
+		  "minAverage": 76.12
+	  },
+	  {
+		  "sections_title": "changing envr",
+		  "sections_dept": "geob",
+		  "maxAverage": 73.47,
+		  "minAverage": 73.47
+	  },
+	  {
+		  "sections_title": "cartography",
+		  "sections_dept": "geob",
+		  "maxAverage": 76.47,
+		  "minAverage": 76.47
+	  },
+	  {
+		  "sections_title": "intr remote sens",
+		  "sections_dept": "geob",
+		  "maxAverage": 71.86,
+		  "minAverage": 71.86
+	  },
+	  {
+		  "sections_title": "globl climt syst",
+		  "sections_dept": "geog",
+		  "maxAverage": 76.16,
+		  "minAverage": 76.16
+	  },
+	  {
+		  "sections_title": "thry&prac h geog",
+		  "sections_dept": "geog",
+		  "maxAverage": 66.68,
+		  "minAverage": 66.68
+	  },
+	  {
+		  "sections_title": "urbanztn glb sth",
+		  "sections_dept": "geog",
+		  "maxAverage": 70.05,
+		  "minAverage": 70.05
+	  },
+	  {
+		  "sections_title": "intr econ geog",
+		  "sections_dept": "geog",
+		  "maxAverage": 72.58,
+		  "minAverage": 72.58
+	  },
+	  {
+		  "sections_title": "geog econ devlop",
+		  "sections_dept": "geog",
+		  "maxAverage": 74.42,
+		  "minAverage": 74.42
+	  },
+	  {
+		  "sections_title": "res str hum geog",
+		  "sections_dept": "geog",
+		  "maxAverage": 77.21,
+		  "minAverage": 77.21
+	  },
+	  {
+		  "sections_title": "statistics geog",
+		  "sections_dept": "geog",
+		  "maxAverage": 77.84,
+		  "minAverage": 77.84
+	  },
+	  {
+		  "sections_title": "the arctic",
+		  "sections_dept": "geog",
+		  "maxAverage": 71.74,
+		  "minAverage": 71.74
+	  },
+	  {
+		  "sections_title": "grm lit 1900-45",
+		  "sections_dept": "germ",
+		  "maxAverage": 73.72,
+		  "minAverage": 73.72
+	  },
+	  {
+		  "sections_title": "gender relations",
+		  "sections_dept": "grsj",
+		  "maxAverage": 76.52,
+		  "minAverage": 76.52
+	  },
+	  {
+		  "sections_title": "cont glbl issues",
+		  "sections_dept": "hist",
+		  "maxAverage": 73.12,
+		  "minAverage": 73.12
+	  },
+	  {
+		  "sections_title": "eur late mid-age",
+		  "sections_dept": "hist",
+		  "maxAverage": 74,
+		  "minAverage": 74
+	  },
+	  {
+		  "sections_title": "int rel grt pwrs",
+		  "sections_dept": "hist",
+		  "maxAverage": 75.19,
+		  "minAverage": 73.78
+	  },
+	  {
+		  "sections_title": "hist holocaust",
+		  "sections_dept": "hist",
+		  "maxAverage": 75.61,
+		  "minAverage": 75.61
+	  },
+	  {
+		  "sections_title": "intm japn i a",
+		  "sections_dept": "japn",
+		  "maxAverage": 71.27,
+		  "minAverage": 71.27
+	  },
+	  {
+		  "sections_title": "sport&exer psyc",
+		  "sections_dept": "kin",
+		  "maxAverage": 75.3,
+		  "minAverage": 75.3
+	  },
+	  {
+		  "sections_title": "high perf cond",
+		  "sections_dept": "kin",
+		  "maxAverage": 82.04,
+		  "minAverage": 81.12
+	  },
+	  {
+		  "sections_title": "spt, peace, cnfl",
+		  "sections_dept": "kin",
+		  "maxAverage": 78.34,
+		  "minAverage": 78.34
+	  },
+	  {
+		  "sections_title": "modern olympics",
+		  "sections_dept": "kin",
+		  "maxAverage": 81.26,
+		  "minAverage": 81.26
+	  },
+	  {
+		  "sections_title": "conflict of laws",
+		  "sections_dept": "law",
+		  "maxAverage": 73.14,
+		  "minAverage": 73.14
+	  },
+	  {
+		  "sections_title": "family law",
+		  "sections_dept": "law",
+		  "maxAverage": 73.74,
+		  "minAverage": 73.74
+	  },
+	  {
+		  "sections_title": "administratv law",
+		  "sections_dept": "law",
+		  "maxAverage": 71.88,
+		  "minAverage": 71.88
+	  },
+	  {
+		  "sections_title": "creditors' remed",
+		  "sections_dept": "law",
+		  "maxAverage": 75.25,
+		  "minAverage": 75.25
+	  },
+	  {
+		  "sections_title": "real estate tran",
+		  "sections_dept": "law",
+		  "maxAverage": 74.07,
+		  "minAverage": 74.07
+	  },
+	  {
+		  "sections_title": "land food comm 2",
+		  "sections_dept": "lfs",
+		  "maxAverage": 85.44,
+		  "minAverage": 85.44
+	  },
+	  {
+		  "sections_title": "lang of world",
+		  "sections_dept": "ling",
+		  "maxAverage": 71.28,
+		  "minAverage": 71.28
+	  },
+	  {
+		  "sections_title": "lang acquisition",
+		  "sections_dept": "ling",
+		  "maxAverage": 72.39,
+		  "minAverage": 72.39
+	  },
+	  {
+		  "sections_title": "df calc ap ph sc",
+		  "sections_dept": "math",
+		  "maxAverage": 69.53,
+		  "minAverage": 69.53
+	  },
+	  {
+		  "sections_title": "int calc ap lf s",
+		  "sections_dept": "math",
+		  "maxAverage": 60.49,
+		  "minAverage": 60.49
+	  },
+	  {
+		  "sections_title": "int calc ap c&ss",
+		  "sections_dept": "math",
+		  "maxAverage": 56.34,
+		  "minAverage": 56.34
+	  },
+	  {
+		  "sections_title": "calculus 3",
+		  "sections_dept": "math",
+		  "maxAverage": 68.09,
+		  "minAverage": 57.56
+	  },
+	  {
+		  "sections_title": "math proof",
+		  "sections_dept": "math",
+		  "maxAverage": 71.08,
+		  "minAverage": 71.08
+	  },
+	  {
+		  "sections_title": "ord diff equtns",
+		  "sections_dept": "math",
+		  "maxAverage": 83.16,
+		  "minAverage": 66.58
+	  },
+	  {
+		  "sections_title": "intr stoch proc",
+		  "sections_dept": "math",
+		  "maxAverage": 64.79,
+		  "minAverage": 64.79
+	  },
+	  {
+		  "sections_title": "intro lin prog",
+		  "sections_dept": "math",
+		  "maxAverage": 69.44,
+		  "minAverage": 68.83
+	  },
+	  {
+		  "sections_title": "eng concepts ii",
+		  "sections_dept": "mech",
+		  "maxAverage": 73.03,
+		  "minAverage": 73.03
+	  },
+	  {
+		  "sections_title": "fluid mechanics",
+		  "sections_dept": "mech",
+		  "maxAverage": 68.73,
+		  "minAverage": 68.73
+	  },
+	  {
+		  "sections_title": "ventltn&occ hlth",
+		  "sections_dept": "mine",
+		  "maxAverage": 77.48,
+		  "minAverage": 77.48
+	  },
+	  {
+		  "sections_title": "min plant feas",
+		  "sections_dept": "mine",
+		  "maxAverage": 80.3,
+		  "minAverage": 80.3
+	  },
+	  {
+		  "sections_title": "met thermodyn ii",
+		  "sections_dept": "mtrl",
+		  "maxAverage": 83.33,
+		  "minAverage": 83.33
+	  },
+	  {
+		  "sections_title": "hydrometalrgy i",
+		  "sections_dept": "mtrl",
+		  "maxAverage": 71.02,
+		  "minAverage": 71.02
+	  },
+	  {
+		  "sections_title": "mech beh matls",
+		  "sections_dept": "mtrl",
+		  "maxAverage": 65.33,
+		  "minAverage": 65.33
+	  },
+	  {
+		  "sections_title": "plymr&p matrx cp",
+		  "sections_dept": "mtrl",
+		  "maxAverage": 75.34,
+		  "minAverage": 75.34
+	  },
+	  {
+		  "sections_title": "monitor & optimz",
+		  "sections_dept": "mtrl",
+		  "maxAverage": 77.35,
+		  "minAverage": 77.35
+	  },
+	  {
+		  "sections_title": "prnc muscl form",
+		  "sections_dept": "musc",
+		  "maxAverage": 68.86,
+		  "minAverage": 68.86
+	  },
+	  {
+		  "sections_title": "diatnc hrmny&vce",
+		  "sections_dept": "musc",
+		  "maxAverage": 72.4,
+		  "minAverage": 68.34
+	  },
+	  {
+		  "sections_title": "fndtns nurs prac",
+		  "sections_dept": "nurs",
+		  "maxAverage": 82.02,
+		  "minAverage": 82.02
+	  },
+	  {
+		  "sections_title": "clin pharcknetcs",
+		  "sections_dept": "phar",
+		  "maxAverage": 91.88,
+		  "minAverage": 90.19
+	  },
+	  {
+		  "sections_title": "intro philosophy",
+		  "sections_dept": "phil",
+		  "maxAverage": 64.51,
+		  "minAverage": 64.51
+	  },
+	  {
+		  "sections_title": "scientifc reason",
+		  "sections_dept": "phil",
+		  "maxAverage": 71.34,
+		  "minAverage": 71.34
+	  },
+	  {
+		  "sections_title": "phil after 1800",
+		  "sections_dept": "phil",
+		  "maxAverage": 76.89,
+		  "minAverage": 71.98
+	  },
+	  {
+		  "sections_title": "intro phys lab",
+		  "sections_dept": "phys",
+		  "maxAverage": 73.35,
+		  "minAverage": 73.35
+	  },
+	  {
+		  "sections_title": "statistical mech",
+		  "sections_dept": "phys",
+		  "maxAverage": 76.72,
+		  "minAverage": 76.72
+	  },
+	  {
+		  "sections_title": "intro to politic",
+		  "sections_dept": "poli",
+		  "maxAverage": 73.58,
+		  "minAverage": 62.7
+	  },
+	  {
+		  "sections_title": "cur poli thought",
+		  "sections_dept": "poli",
+		  "maxAverage": 75.17,
+		  "minAverage": 75.17
+	  },
+	  {
+		  "sections_title": "bc governmt&poli",
+		  "sections_dept": "poli",
+		  "maxAverage": 71.36,
+		  "minAverage": 71.36
+	  },
+	  {
+		  "sections_title": "ca prsp hmn rght",
+		  "sections_dept": "poli",
+		  "maxAverage": 76.25,
+		  "minAverage": 76.25
+	  },
+	  {
+		  "sections_title": "infancy",
+		  "sections_dept": "psyc",
+		  "maxAverage": 70.66,
+		  "minAverage": 70.66
+	  },
+	  {
+		  "sections_title": "health psycholgy",
+		  "sections_dept": "psyc",
+		  "maxAverage": 68.61,
+		  "minAverage": 68.61
+	  },
+	  {
+		  "sections_title": "int sem in sw th",
+		  "sections_dept": "sowk",
+		  "maxAverage": 88.04,
+		  "minAverage": 88.04
+	  },
+	  {
+		  "sections_title": "intr sowk resrch",
+		  "sections_dept": "sowk",
+		  "maxAverage": 82.35,
+		  "minAverage": 82.35
+	  },
+	  {
+		  "sections_title": "convers span i",
+		  "sections_dept": "span",
+		  "maxAverage": 77.4,
+		  "minAverage": 77.4
+	  },
+	  {
+		  "sections_title": "intro prob&stats",
+		  "sections_dept": "stat",
+		  "maxAverage": 74.3,
+		  "minAverage": 74.3
+	  },
+	  {
+		  "sections_title": "intr probability",
+		  "sections_dept": "stat",
+		  "maxAverage": 66.84,
+		  "minAverage": 66.84
+	  },
+	  {
+		  "sections_title": "dsgn&anl expermt",
+		  "sections_dept": "stat",
+		  "maxAverage": 75.67,
+		  "minAverage": 75.67
+	  },
+	  {
+		  "sections_title": "elem swedish 1",
+		  "sections_dept": "swed",
+		  "maxAverage": 81.24,
+		  "minAverage": 81.24
+	  },
+	  {
+		  "sections_title": "studio theory i",
+		  "sections_dept": "visa",
+		  "maxAverage": 72.97,
+		  "minAverage": 72.97
+	  },
+	  {
+		  "sections_title": "globlzn&sustainb",
+		  "sections_dept": "wood",
+		  "maxAverage": 78.48,
+		  "minAverage": 78.48
+	  }
+  ]
+}

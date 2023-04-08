@@ -1,0 +1,1689 @@
+{
+	"title": "valid_many_columns_and_order_keys",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_uuid": "*110*"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_id",
+				"sections_uuid",
+				"sections_title",
+				"sections_instructor",
+				"sections_dept",
+				"sections_year",
+				"sections_avg"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"sections_title",
+					"sections_instructor",
+					"sections_dept",
+					"sections_year"
+				]
+			}
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_id": "351",
+			"sections_uuid": "8110",
+			"sections_title": "women in economy",
+			"sections_instructor": "adshade, marina",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 71.07
+		},
+		{
+			"sections_id": "495",
+			"sections_uuid": "81100",
+			"sections_title": "wildlife mngment",
+			"sections_instructor": "",
+			"sections_dept": "apbi",
+			"sections_year": 1900,
+			"sections_avg": 68.53
+		},
+		{
+			"sections_id": "300",
+			"sections_uuid": "11081",
+			"sections_title": "urb&rl es econ",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 60.75
+		},
+		{
+			"sections_id": "300",
+			"sections_uuid": "11082",
+			"sections_title": "urb&rl es econ",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 56.66
+		},
+		{
+			"sections_id": "300",
+			"sections_uuid": "11083",
+			"sections_title": "urb&rl es econ",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 58.64
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "81102",
+			"sections_title": "undergrad essay",
+			"sections_instructor": "",
+			"sections_dept": "apbi",
+			"sections_year": 1900,
+			"sections_avg": 78.4
+		},
+		{
+			"sections_id": "402",
+			"sections_uuid": "76110",
+			"sections_title": "sus soil mgmt",
+			"sections_instructor": "brown, sandra",
+			"sections_dept": "apbi",
+			"sections_year": 2011,
+			"sections_avg": 82.63
+		},
+		{
+			"sections_id": "515",
+			"sections_uuid": "11050",
+			"sections_title": "survlnc&monitrng",
+			"sections_instructor": "kishchenko, svetlana",
+			"sections_dept": "spph",
+			"sections_year": 2013,
+			"sections_avg": 89.5
+		},
+		{
+			"sections_id": "515",
+			"sections_uuid": "28110",
+			"sections_title": "survlnc&monitrng",
+			"sections_instructor": "galanis, eleni;otterstatter, michael",
+			"sections_dept": "spph",
+			"sections_year": 2014,
+			"sections_avg": 89.19
+		},
+		{
+			"sections_id": "515",
+			"sections_uuid": "11051",
+			"sections_title": "survlnc&monitrng",
+			"sections_instructor": "",
+			"sections_dept": "spph",
+			"sections_year": 1900,
+			"sections_avg": 89.5
+		},
+		{
+			"sections_id": "323",
+			"sections_uuid": "55110",
+			"sections_title": "struc&repr fungi",
+			"sections_instructor": "berbee, mary",
+			"sections_dept": "biol",
+			"sections_year": 2015,
+			"sections_avg": 78.29
+		},
+		{
+			"sections_id": "323",
+			"sections_uuid": "72110",
+			"sections_title": "struc&repr fungi",
+			"sections_instructor": "",
+			"sections_dept": "biol",
+			"sections_year": 1900,
+			"sections_avg": 76.7
+		},
+		{
+			"sections_id": "112",
+			"sections_uuid": "57110",
+			"sections_title": "strat univ writ",
+			"sections_instructor": "grubisic, brett",
+			"sections_dept": "engl",
+			"sections_year": 2013,
+			"sections_avg": 75.19
+		},
+		{
+			"sections_id": "305",
+			"sections_uuid": "20110",
+			"sections_title": "strat compnsaton",
+			"sections_instructor": "",
+			"sections_dept": "cohr",
+			"sections_year": 1900,
+			"sections_avg": 79.94
+		},
+		{
+			"sections_id": "419",
+			"sections_uuid": "73110",
+			"sections_title": "stochastic proc",
+			"sections_instructor": "",
+			"sections_dept": "math",
+			"sections_year": 1900,
+			"sections_avg": 88.8
+		},
+		{
+			"sections_id": "344",
+			"sections_uuid": "11097",
+			"sections_title": "stat&comp ap val",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 62.08
+		},
+		{
+			"sections_id": "344",
+			"sections_uuid": "11098",
+			"sections_title": "stat&comp ap val",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 60.54
+		},
+		{
+			"sections_id": "344",
+			"sections_uuid": "11099",
+			"sections_title": "stat&comp ap val",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 61.25
+		},
+		{
+			"sections_id": "505",
+			"sections_uuid": "88110",
+			"sections_title": "stat lit nursing",
+			"sections_instructor": "",
+			"sections_dept": "nurs",
+			"sections_year": 1900,
+			"sections_avg": 81.19
+		},
+		{
+			"sections_id": "380",
+			"sections_uuid": "31108",
+			"sections_title": "soci meth survey",
+			"sections_instructor": "wilkes, rima",
+			"sections_dept": "soci",
+			"sections_year": 2012,
+			"sections_avg": 74.88
+		},
+		{
+			"sections_id": "380",
+			"sections_uuid": "31109",
+			"sections_title": "soci meth survey",
+			"sections_instructor": "bartolic, silvia",
+			"sections_dept": "soci",
+			"sections_year": 2012,
+			"sections_avg": 79.26
+		},
+		{
+			"sections_id": "380",
+			"sections_uuid": "31110",
+			"sections_title": "soci meth survey",
+			"sections_instructor": "",
+			"sections_dept": "soci",
+			"sections_year": 1900,
+			"sections_avg": 77.12
+		},
+		{
+			"sections_id": "210",
+			"sections_uuid": "61100",
+			"sections_title": "sftwr constructn",
+			"sections_instructor": "",
+			"sections_dept": "cpsc",
+			"sections_year": 1900,
+			"sections_avg": 71.46
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "11069",
+			"sections_title": "rl es fnc ca ctt",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 74.4
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "11070",
+			"sections_title": "rl es fnc ca ctt",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 76.36
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "11071",
+			"sections_title": "rl es fnc ca ctt",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 75.1
+		},
+		{
+			"sections_id": "331",
+			"sections_uuid": "11091",
+			"sections_title": "real est inv an",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 68.05
+		},
+		{
+			"sections_id": "331",
+			"sections_uuid": "11092",
+			"sections_title": "real est inv an",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 61.69
+		},
+		{
+			"sections_id": "331",
+			"sections_uuid": "11093",
+			"sections_title": "real est inv an",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 65.13
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "37110",
+			"sections_title": "read, write lit",
+			"sections_instructor": "grafton, kathryn",
+			"sections_dept": "engl",
+			"sections_year": 2015,
+			"sections_avg": 71.07
+		},
+		{
+			"sections_id": "112",
+			"sections_uuid": "11063",
+			"sections_title": "r prop law&ethic",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 67.94
+		},
+		{
+			"sections_id": "112",
+			"sections_uuid": "11064",
+			"sections_title": "r prop law&ethic",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 69.33
+		},
+		{
+			"sections_id": "112",
+			"sections_uuid": "11065",
+			"sections_title": "r prop law&ethic",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 68.69
+		},
+		{
+			"sections_id": "308",
+			"sections_uuid": "51105",
+			"sections_title": "quatrny&app geo",
+			"sections_instructor": "koppes, michele",
+			"sections_dept": "geob",
+			"sections_year": 2015,
+			"sections_avg": 77.47
+		},
+		{
+			"sections_id": "308",
+			"sections_uuid": "51106",
+			"sections_title": "quatrny&app geo",
+			"sections_instructor": "",
+			"sections_dept": "geob",
+			"sections_year": 1900,
+			"sections_avg": 77.47
+		},
+		{
+			"sections_id": "475",
+			"sections_uuid": "3110",
+			"sections_title": "pulm phys exerci",
+			"sections_instructor": "",
+			"sections_dept": "kin",
+			"sections_year": 1900,
+			"sections_avg": 76.05
+		},
+		{
+			"sections_id": "251",
+			"sections_uuid": "36110",
+			"sections_title": "public law",
+			"sections_instructor": "",
+			"sections_dept": "law",
+			"sections_year": 2014,
+			"sections_avg": 74.5
+		},
+		{
+			"sections_id": "434",
+			"sections_uuid": "26110",
+			"sections_title": "prodcing film&tv",
+			"sections_instructor": "",
+			"sections_dept": "fipr",
+			"sections_year": 1900,
+			"sections_avg": 81.5
+		},
+		{
+			"sections_id": "500",
+			"sections_uuid": "66110",
+			"sections_title": "procss fundmtls",
+			"sections_instructor": "krishnan, harish",
+			"sections_dept": "basc",
+			"sections_year": 2014,
+			"sections_avg": 81.64
+		},
+		{
+			"sections_id": "587",
+			"sections_uuid": "95110",
+			"sections_title": "preservation",
+			"sections_instructor": "",
+			"sections_dept": "arst",
+			"sections_year": 1900,
+			"sections_avg": 82.07
+		},
+		{
+			"sections_id": "343",
+			"sections_uuid": "54110",
+			"sections_title": "plants & peoples",
+			"sections_instructor": "hawkes, michael",
+			"sections_dept": "biol",
+			"sections_year": 2010,
+			"sections_avg": 80.13
+		},
+		{
+			"sections_id": "435",
+			"sections_uuid": "64110",
+			"sections_title": "phar chem iii",
+			"sections_instructor": "",
+			"sections_dept": "phar",
+			"sections_year": 1900,
+			"sections_avg": 74.65
+		},
+		{
+			"sections_id": "329",
+			"sections_uuid": "11085",
+			"sections_title": "organiztl bhvr",
+			"sections_instructor": "schulz, martin",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 64.43
+		},
+		{
+			"sections_id": "329",
+			"sections_uuid": "11086",
+			"sections_title": "organiztl bhvr",
+			"sections_instructor": "schulz, martin",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 78.2
+		},
+		{
+			"sections_id": "329",
+			"sections_uuid": "11084",
+			"sections_title": "organiztl bhvr",
+			"sections_instructor": "gurton, tracey",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 75.36
+		},
+		{
+			"sections_id": "329",
+			"sections_uuid": "11087",
+			"sections_title": "organiztl bhvr",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 75.03
+		},
+		{
+			"sections_id": "235",
+			"sections_uuid": "70110",
+			"sections_title": "org chem lab",
+			"sections_instructor": "zendrowski, dana",
+			"sections_dept": "chem",
+			"sections_year": 2014,
+			"sections_avg": 74.48
+		},
+		{
+			"sections_id": "135",
+			"sections_uuid": "7110",
+			"sections_title": "opera repertr i",
+			"sections_instructor": "epp, richard arthur",
+			"sections_dept": "musc",
+			"sections_year": 2015,
+			"sections_avg": 81.43
+		},
+		{
+			"sections_id": "377",
+			"sections_uuid": "11002",
+			"sections_title": "northcoast peo",
+			"sections_instructor": "townsend-gault, charlotte",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 79.71
+		},
+		{
+			"sections_id": "377",
+			"sections_uuid": "11003",
+			"sections_title": "northcoast peo",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 79.71
+		},
+		{
+			"sections_id": "486",
+			"sections_uuid": "40110",
+			"sections_title": "nondestrctv eval",
+			"sections_instructor": "",
+			"sections_dept": "mtrl",
+			"sections_year": 1900,
+			"sections_avg": 73.27
+		},
+		{
+			"sections_id": "501",
+			"sections_uuid": "11045",
+			"sections_title": "neuroscience ii",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 2008,
+			"sections_avg": 86.26
+		},
+		{
+			"sections_id": "501",
+			"sections_uuid": "11046",
+			"sections_title": "neuroscience ii",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 1900,
+			"sections_avg": 86.26
+		},
+		{
+			"sections_id": "500",
+			"sections_uuid": "11043",
+			"sections_title": "neuroscience i",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 2008,
+			"sections_avg": 82.52
+		},
+		{
+			"sections_id": "500",
+			"sections_uuid": "11044",
+			"sections_title": "neuroscience i",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 1900,
+			"sections_avg": 82.52
+		},
+		{
+			"sections_id": "601",
+			"sections_uuid": "91101",
+			"sections_title": "microecon ii",
+			"sections_instructor": "severinov, sergei",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 81.64
+		},
+		{
+			"sections_id": "601",
+			"sections_uuid": "91102",
+			"sections_title": "microecon ii",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 81.64
+		},
+		{
+			"sections_id": "600",
+			"sections_uuid": "22110",
+			"sections_title": "microecon i",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 83.52
+		},
+		{
+			"sections_id": "600",
+			"sections_uuid": "91100",
+			"sections_title": "microecon i",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 86.25
+		},
+		{
+			"sections_id": "300",
+			"sections_uuid": "51100",
+			"sections_title": "micro wthr&clim",
+			"sections_instructor": "",
+			"sections_dept": "geob",
+			"sections_year": 1900,
+			"sections_avg": 69.84
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "11054",
+			"sections_title": "mic fnd rl es ec",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 65.25
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "11055",
+			"sections_title": "mic fnd rl es ec",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 63.72
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "11056",
+			"sections_title": "mic fnd rl es ec",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 64.55
+		},
+		{
+			"sections_id": "571",
+			"sections_uuid": "11031",
+			"sections_title": "meth art hist",
+			"sections_instructor": "cohodas, marvin;ryan, maureen",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 87
+		},
+		{
+			"sections_id": "571",
+			"sections_uuid": "11032",
+			"sections_title": "meth art hist",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 87
+		},
+		{
+			"sections_id": "458",
+			"sections_uuid": "9110",
+			"sections_title": "mechtron dsn prj",
+			"sections_instructor": "feng, hsi-yung;fengler, markus;hodgson, antony;mikkelsen, jon;van der loos, hendrik",
+			"sections_dept": "mech",
+			"sections_year": 2014,
+			"sections_avg": 85.66
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "47110",
+			"sections_title": "matrix algebra",
+			"sections_instructor": "peterson, dale",
+			"sections_dept": "math",
+			"sections_year": 2014,
+			"sections_avg": 72.48
+		},
+		{
+			"sections_id": "549",
+			"sections_uuid": "11047",
+			"sections_title": "master's thesis",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 2008,
+			"sections_avg": 86.5
+		},
+		{
+			"sections_id": "549",
+			"sections_uuid": "11048",
+			"sections_title": "master's thesis",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 2008,
+			"sections_avg": 84.83
+		},
+		{
+			"sections_id": "549",
+			"sections_uuid": "11049",
+			"sections_title": "master's thesis",
+			"sections_instructor": "",
+			"sections_dept": "nrsc",
+			"sections_year": 1900,
+			"sections_avg": 85.5
+		},
+		{
+			"sections_id": "599",
+			"sections_uuid": "11035",
+			"sections_title": "master's thesis",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 86.2
+		},
+		{
+			"sections_id": "599",
+			"sections_uuid": "11036",
+			"sections_title": "master's thesis",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 86.2
+		},
+		{
+			"sections_id": "490",
+			"sections_uuid": "43110",
+			"sections_title": "majors seminar",
+			"sections_instructor": "lai, larissa",
+			"sections_dept": "engl",
+			"sections_year": 2009,
+			"sections_avg": 79.06
+		},
+		{
+			"sections_id": "603",
+			"sections_uuid": "91105",
+			"sections_title": "macroecon ii",
+			"sections_instructor": "gallipoli, giovanni",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 88.09
+		},
+		{
+			"sections_id": "603",
+			"sections_uuid": "91106",
+			"sections_title": "macroecon ii",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 88.09
+		},
+		{
+			"sections_id": "602",
+			"sections_uuid": "91103",
+			"sections_title": "macroecon i",
+			"sections_instructor": "yedid levi, yaniv",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 87.92
+		},
+		{
+			"sections_id": "602",
+			"sections_uuid": "91104",
+			"sections_title": "macroecon i",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 87.92
+		},
+		{
+			"sections_id": "540",
+			"sections_uuid": "52110",
+			"sections_title": "machine learn i",
+			"sections_instructor": "",
+			"sections_dept": "cpsc",
+			"sections_year": 2008,
+			"sections_avg": 81.12
+		},
+		{
+			"sections_id": "316",
+			"sections_uuid": "13110",
+			"sections_title": "lrn'g disablties",
+			"sections_instructor": "grund, brandy-jean",
+			"sections_dept": "epse",
+			"sections_year": 2016,
+			"sections_avg": 88.36
+		},
+		{
+			"sections_id": "464",
+			"sections_uuid": "11017",
+			"sections_title": "japanese art",
+			"sections_instructor": "hirasawa, caroline",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 84.57
+		},
+		{
+			"sections_id": "464",
+			"sections_uuid": "11018",
+			"sections_title": "japanese art",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 84.57
+		},
+		{
+			"sections_id": "511",
+			"sections_uuid": "60110",
+			"sections_title": "investments",
+			"sections_instructor": "garlappi, lorenzo",
+			"sections_dept": "bafi",
+			"sections_year": 2009,
+			"sections_avg": 80.72
+		},
+		{
+			"sections_id": "110",
+			"sections_uuid": "63110",
+			"sections_title": "intro literature",
+			"sections_instructor": "weir, mary lorraine",
+			"sections_dept": "engl",
+			"sections_year": 2016,
+			"sections_avg": 72.23
+		},
+		{
+			"sections_id": "213",
+			"sections_uuid": "61102",
+			"sections_title": "intro comp sys",
+			"sections_instructor": "munzner, tamara",
+			"sections_dept": "cpsc",
+			"sections_year": 2011,
+			"sections_avg": 71.87
+		},
+		{
+			"sections_id": "213",
+			"sections_uuid": "61101",
+			"sections_title": "intro comp sys",
+			"sections_instructor": "feeley, michael",
+			"sections_dept": "cpsc",
+			"sections_year": 2011,
+			"sections_avg": 74.52
+		},
+		{
+			"sections_id": "213",
+			"sections_uuid": "61103",
+			"sections_title": "intro comp sys",
+			"sections_instructor": "",
+			"sections_dept": "cpsc",
+			"sections_year": 1900,
+			"sections_avg": 73
+		},
+		{
+			"sections_id": "200",
+			"sections_uuid": "27110",
+			"sections_title": "intro acad writ",
+			"sections_instructor": "zappa, sandra",
+			"sections_dept": "lled",
+			"sections_year": 2013,
+			"sections_avg": 72.71
+		},
+		{
+			"sections_id": "302",
+			"sections_uuid": "90110",
+			"sections_title": "intr probability",
+			"sections_instructor": "balka, richard",
+			"sections_dept": "math",
+			"sections_year": 2015,
+			"sections_avg": 77.28
+		},
+		{
+			"sections_id": "294",
+			"sections_uuid": "11077",
+			"sections_title": "intr mgmt acct",
+			"sections_instructor": "norwood, peter",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 69.04
+		},
+		{
+			"sections_id": "294",
+			"sections_uuid": "11078",
+			"sections_title": "intr mgmt acct",
+			"sections_instructor": "norwood, peter",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 58.25
+		},
+		{
+			"sections_id": "294",
+			"sections_uuid": "11079",
+			"sections_title": "intr mgmt acct",
+			"sections_instructor": "norwood, peter",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 69.27
+		},
+		{
+			"sections_id": "294",
+			"sections_uuid": "11080",
+			"sections_title": "intr mgmt acct",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 66.77
+		},
+		{
+			"sections_id": "305",
+			"sections_uuid": "51101",
+			"sections_title": "intr hydrology",
+			"sections_instructor": "moore, robert daniel",
+			"sections_dept": "geob",
+			"sections_year": 2015,
+			"sections_avg": 71.02
+		},
+		{
+			"sections_id": "305",
+			"sections_uuid": "51102",
+			"sections_title": "intr hydrology",
+			"sections_instructor": "",
+			"sections_dept": "geob",
+			"sections_year": 1900,
+			"sections_avg": 71.02
+		},
+		{
+			"sections_id": "293",
+			"sections_uuid": "11072",
+			"sections_title": "intr fncl acct",
+			"sections_instructor": "sinclair, scott",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 61.47
+		},
+		{
+			"sections_id": "293",
+			"sections_uuid": "11074",
+			"sections_title": "intr fncl acct",
+			"sections_instructor": "sinclair, scott",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 69.27
+		},
+		{
+			"sections_id": "293",
+			"sections_uuid": "11075",
+			"sections_title": "intr fncl acct",
+			"sections_instructor": "sinclair, scott",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 67.01
+		},
+		{
+			"sections_id": "293",
+			"sections_uuid": "11073",
+			"sections_title": "intr fncl acct",
+			"sections_instructor": "rajwani, aziz",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 69.82
+		},
+		{
+			"sections_id": "293",
+			"sections_uuid": "11076",
+			"sections_title": "intr fncl acct",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 67.52
+		},
+		{
+			"sections_id": "361",
+			"sections_uuid": "29110",
+			"sections_title": "intr econ geog",
+			"sections_instructor": "",
+			"sections_dept": "geog",
+			"sections_year": 1900,
+			"sections_avg": 72.71
+		},
+		{
+			"sections_id": "353",
+			"sections_uuid": "11101",
+			"sections_title": "intm fnc acct i",
+			"sections_instructor": "yee, doug",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 72.3
+		},
+		{
+			"sections_id": "353",
+			"sections_uuid": "11103",
+			"sections_title": "intm fnc acct i",
+			"sections_instructor": "yee, doug",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 71.55
+		},
+		{
+			"sections_id": "353",
+			"sections_uuid": "11104",
+			"sections_title": "intm fnc acct i",
+			"sections_instructor": "wyntjes, barbara",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 66.38
+		},
+		{
+			"sections_id": "353",
+			"sections_uuid": "11100",
+			"sections_title": "intm fnc acct i",
+			"sections_instructor": "chan, david",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 68.21
+		},
+		{
+			"sections_id": "353",
+			"sections_uuid": "11102",
+			"sections_title": "intm fnc acct i",
+			"sections_instructor": "chan, david",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 67.33
+		},
+		{
+			"sections_id": "353",
+			"sections_uuid": "11105",
+			"sections_title": "intm fnc acct i",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 69.54
+		},
+		{
+			"sections_id": "310",
+			"sections_uuid": "53110",
+			"sections_title": "inter germ iv",
+			"sections_instructor": "hempen, daniela",
+			"sections_dept": "germ",
+			"sections_year": 2007,
+			"sections_avg": 76.9
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1104",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "wosk, larry",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 74.49
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1105",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "wosk, larry",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 75.03
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1100",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "nakamura, masao",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 77.74
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1101",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "nakamura, masao",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 78.39
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1106",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "holloway, isaac",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 76.48
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1102",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "antweiler, werner",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 78.31
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1103",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "antweiler, werner",
+			"sections_dept": "comm",
+			"sections_year": 2011,
+			"sections_avg": 76.96
+		},
+		{
+			"sections_id": "498",
+			"sections_uuid": "1107",
+			"sections_title": "int'l bus mngt",
+			"sections_instructor": "",
+			"sections_dept": "comm",
+			"sections_year": 1900,
+			"sections_avg": 76.73
+		},
+		{
+			"sections_id": "290",
+			"sections_uuid": "19110",
+			"sections_title": "int quan dec mak",
+			"sections_instructor": "das, anupam",
+			"sections_dept": "comm",
+			"sections_year": 2014,
+			"sections_avg": 71.17
+		},
+		{
+			"sections_id": "335",
+			"sections_uuid": "11094",
+			"sections_title": "info systems",
+			"sections_instructor": "cheung, yau man",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 81.12
+		},
+		{
+			"sections_id": "335",
+			"sections_uuid": "11095",
+			"sections_title": "info systems",
+			"sections_instructor": "cheung, yau man",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 78.72
+		},
+		{
+			"sections_id": "335",
+			"sections_uuid": "11096",
+			"sections_title": "info systems",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 79.74
+		},
+		{
+			"sections_id": "514",
+			"sections_uuid": "65110",
+			"sections_title": "hlth cr dec anly",
+			"sections_instructor": "bansback, nicholas",
+			"sections_dept": "spph",
+			"sections_year": 2015,
+			"sections_avg": 88
+		},
+		{
+			"sections_id": "323",
+			"sections_uuid": "69110",
+			"sections_title": "hist theory dir",
+			"sections_instructor": "",
+			"sections_dept": "thtr",
+			"sections_year": 1900,
+			"sections_avg": 80.21
+		},
+		{
+			"sections_id": "564",
+			"sections_uuid": "59110",
+			"sections_title": "group counsling",
+			"sections_instructor": "",
+			"sections_dept": "cnps",
+			"sections_year": 1900,
+			"sections_avg": 88.26
+		},
+		{
+			"sections_id": "222",
+			"sections_uuid": "79110",
+			"sections_title": "geological time",
+			"sections_instructor": "longridge, louise;smith, paul laurence",
+			"sections_dept": "eosc",
+			"sections_year": 2007,
+			"sections_avg": 72.41
+		},
+		{
+			"sections_id": "316",
+			"sections_uuid": "97110",
+			"sections_title": "geog natural haz",
+			"sections_instructor": "brown, loch",
+			"sections_dept": "geog",
+			"sections_year": 2013,
+			"sections_avg": 73.69
+		},
+		{
+			"sections_id": "330",
+			"sections_uuid": "11088",
+			"sections_title": "found re apprai",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 64.25
+		},
+		{
+			"sections_id": "330",
+			"sections_uuid": "11089",
+			"sections_title": "found re apprai",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 64.26
+		},
+		{
+			"sections_id": "330",
+			"sections_uuid": "11090",
+			"sections_title": "found re apprai",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 64.25
+		},
+		{
+			"sections_id": "121",
+			"sections_uuid": "11066",
+			"sections_title": "fndtns rl es mth",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 60.97
+		},
+		{
+			"sections_id": "121",
+			"sections_uuid": "11067",
+			"sections_title": "fndtns rl es mth",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 60.73
+		},
+		{
+			"sections_id": "121",
+			"sections_uuid": "11068",
+			"sections_title": "fndtns rl es mth",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 60.85
+		},
+		{
+			"sections_id": "511",
+			"sections_uuid": "93110",
+			"sections_title": "fndtns nurs prac",
+			"sections_instructor": "",
+			"sections_dept": "nurs",
+			"sections_year": 1900,
+			"sections_avg": 83.43
+		},
+		{
+			"sections_id": "501",
+			"sections_uuid": "87110",
+			"sections_title": "evidnc for pract",
+			"sections_instructor": "davidson, katherine;mortenson, patricia",
+			"sections_dept": "rhsc",
+			"sections_year": 2015,
+			"sections_avg": 84.5
+		},
+		{
+			"sections_id": "477",
+			"sections_uuid": "49110",
+			"sections_title": "electrochem eng",
+			"sections_instructor": "",
+			"sections_dept": "chbe",
+			"sections_year": 1900,
+			"sections_avg": 71.15
+		},
+		{
+			"sections_id": "627",
+			"sections_uuid": "91109",
+			"sections_title": "econ thry ii",
+			"sections_instructor": "marmer, vadim",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 84.77
+		},
+		{
+			"sections_id": "627",
+			"sections_uuid": "91110",
+			"sections_title": "econ thry ii",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 84.77
+		},
+		{
+			"sections_id": "626",
+			"sections_uuid": "91107",
+			"sections_title": "econ thry i",
+			"sections_instructor": "song, kyungchul",
+			"sections_dept": "econ",
+			"sections_year": 2013,
+			"sections_avg": 83.58
+		},
+		{
+			"sections_id": "626",
+			"sections_uuid": "91108",
+			"sections_title": "econ thry i",
+			"sections_instructor": "",
+			"sections_dept": "econ",
+			"sections_year": 1900,
+			"sections_avg": 83.58
+		},
+		{
+			"sections_id": "436",
+			"sections_uuid": "11006",
+			"sections_title": "early modern art",
+			"sections_instructor": "wilson, bronwen",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 81.88
+		},
+		{
+			"sections_id": "436",
+			"sections_uuid": "11007",
+			"sections_title": "early modern art",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 81.88
+		},
+		{
+			"sections_id": "259",
+			"sections_uuid": "61108",
+			"sections_title": "dta&alg elec eng",
+			"sections_instructor": "knorr, edwin max",
+			"sections_dept": "cpsc",
+			"sections_year": 2011,
+			"sections_avg": 74.22
+		},
+		{
+			"sections_id": "259",
+			"sections_uuid": "61109",
+			"sections_title": "dta&alg elec eng",
+			"sections_instructor": "",
+			"sections_dept": "cpsc",
+			"sections_year": 1900,
+			"sections_avg": 74.22
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "5110",
+			"sections_title": "df calc ap ph sc",
+			"sections_instructor": "morin, matthew",
+			"sections_dept": "math",
+			"sections_year": 2009,
+			"sections_avg": 71.18
+		},
+		{
+			"sections_id": "510",
+			"sections_uuid": "92110",
+			"sections_title": "des tech",
+			"sections_instructor": "",
+			"sections_dept": "etec",
+			"sections_year": 1900,
+			"sections_avg": 91.23
+		},
+		{
+			"sections_id": "101",
+			"sections_uuid": "11057",
+			"sections_title": "cptl mrkts&rl es",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 70.22
+		},
+		{
+			"sections_id": "101",
+			"sections_uuid": "11058",
+			"sections_title": "cptl mrkts&rl es",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 73.81
+		},
+		{
+			"sections_id": "101",
+			"sections_uuid": "11059",
+			"sections_title": "cptl mrkts&rl es",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 72.08
+		},
+		{
+			"sections_id": "354",
+			"sections_uuid": "11106",
+			"sections_title": "cost accounting",
+			"sections_instructor": "norwood, peter",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 70.68
+		},
+		{
+			"sections_id": "354",
+			"sections_uuid": "11109",
+			"sections_title": "cost accounting",
+			"sections_instructor": "norwood, peter",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 74.52
+		},
+		{
+			"sections_id": "354",
+			"sections_uuid": "11110",
+			"sections_title": "cost accounting",
+			"sections_instructor": "norwood, peter",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 68.78
+		},
+		{
+			"sections_id": "354",
+			"sections_uuid": "11107",
+			"sections_title": "cost accounting",
+			"sections_instructor": "chan, david",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 68.51
+		},
+		{
+			"sections_id": "354",
+			"sections_uuid": "11108",
+			"sections_title": "cost accounting",
+			"sections_instructor": "chan, david",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 73.35
+		},
+		{
+			"sections_id": "390",
+			"sections_uuid": "44110",
+			"sections_title": "business writing",
+			"sections_instructor": "",
+			"sections_dept": "comm",
+			"sections_year": 1900,
+			"sections_avg": 77.59
+		},
+		{
+			"sections_id": "323",
+			"sections_uuid": "2110",
+			"sections_title": "busi chinese ii",
+			"sections_instructor": "lu, ming zhu",
+			"sections_dept": "chin",
+			"sections_year": 2009,
+			"sections_avg": 76.52
+		},
+		{
+			"sections_id": "364",
+			"sections_uuid": "31102",
+			"sections_title": "built environmnt",
+			"sections_instructor": "lauster, nathanael",
+			"sections_dept": "soci",
+			"sections_year": 2012,
+			"sections_avg": 73.91
+		},
+		{
+			"sections_id": "364",
+			"sections_uuid": "31103",
+			"sections_title": "built environmnt",
+			"sections_instructor": "",
+			"sections_dept": "soci",
+			"sections_year": 1900,
+			"sections_avg": 73.91
+		},
+		{
+			"sections_id": "112",
+			"sections_uuid": "42110",
+			"sections_title": "biology of cell",
+			"sections_instructor": "smith, karen",
+			"sections_dept": "biol",
+			"sections_year": 2014,
+			"sections_avg": 74.26
+		},
+		{
+			"sections_id": "309",
+			"sections_uuid": "51107",
+			"sections_title": "biogeosc field",
+			"sections_instructor": "koppes, michele;mckendry, ian;moore, robert daniel;williams, jennifer",
+			"sections_dept": "geob",
+			"sections_year": 2015,
+			"sections_avg": 77.43
+		},
+		{
+			"sections_id": "309",
+			"sections_uuid": "51108",
+			"sections_title": "biogeosc field",
+			"sections_instructor": "",
+			"sections_dept": "geob",
+			"sections_year": 1900,
+			"sections_avg": 77.43
+		},
+		{
+			"sections_id": "307",
+			"sections_uuid": "51103",
+			"sections_title": "biogeog global",
+			"sections_instructor": "frei, esther",
+			"sections_dept": "geob",
+			"sections_year": 2015,
+			"sections_avg": 74.08
+		},
+		{
+			"sections_id": "307",
+			"sections_uuid": "51104",
+			"sections_title": "biogeog global",
+			"sections_instructor": "",
+			"sections_dept": "geob",
+			"sections_year": 1900,
+			"sections_avg": 74.08
+		},
+		{
+			"sections_id": "516",
+			"sections_uuid": "45110",
+			"sections_title": "behv timber stru",
+			"sections_instructor": "tannert, thomas",
+			"sections_dept": "civl",
+			"sections_year": 2013,
+			"sections_avg": 86.44
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "33110",
+			"sections_title": "begin japn i",
+			"sections_instructor": "hayashi, hisako",
+			"sections_dept": "japn",
+			"sections_year": 2014,
+			"sections_avg": 72.06
+		},
+		{
+			"sections_id": "100",
+			"sections_uuid": "98110",
+			"sections_title": "begin japn i",
+			"sections_instructor": "",
+			"sections_dept": "japn",
+			"sections_year": 2014,
+			"sections_avg": 71.58
+		},
+		{
+			"sections_id": "111",
+			"sections_uuid": "11060",
+			"sections_title": "bc law & ethics",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 66.86
+		},
+		{
+			"sections_id": "111",
+			"sections_uuid": "11061",
+			"sections_title": "bc law & ethics",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 2013,
+			"sections_avg": 68.57
+		},
+		{
+			"sections_id": "111",
+			"sections_uuid": "11062",
+			"sections_title": "bc law & ethics",
+			"sections_instructor": "",
+			"sections_dept": "busi",
+			"sections_year": 1900,
+			"sections_avg": 67.62
+		},
+		{
+			"sections_id": "362",
+			"sections_uuid": "14110",
+			"sections_title": "basic intvw skls",
+			"sections_instructor": "dyer, brenda",
+			"sections_dept": "cnps",
+			"sections_year": 2014,
+			"sections_avg": 87.64
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "61106",
+			"sections_title": "basic alg&data",
+			"sections_instructor": "wolfman, steven",
+			"sections_dept": "cpsc",
+			"sections_year": 2011,
+			"sections_avg": 70.94
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "61105",
+			"sections_title": "basic alg&data",
+			"sections_instructor": "hu, alan",
+			"sections_dept": "cpsc",
+			"sections_year": 2011,
+			"sections_avg": 70.51
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "61104",
+			"sections_title": "basic alg&data",
+			"sections_instructor": "evans, william",
+			"sections_dept": "cpsc",
+			"sections_year": 2011,
+			"sections_avg": 75.22
+		},
+		{
+			"sections_id": "221",
+			"sections_uuid": "61107",
+			"sections_title": "basic alg&data",
+			"sections_instructor": "",
+			"sections_dept": "cpsc",
+			"sections_year": 1900,
+			"sections_avg": 72.36
+		},
+		{
+			"sections_id": "405",
+			"sections_uuid": "30110",
+			"sections_title": "astronomical lab",
+			"sections_instructor": "",
+			"sections_dept": "astr",
+			"sections_year": 1900,
+			"sections_avg": 82.4
+		},
+		{
+			"sections_id": "432",
+			"sections_uuid": "11004",
+			"sections_title": "art middle ages",
+			"sections_instructor": "knicely guilbaut, carol",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 82.73
+		},
+		{
+			"sections_id": "432",
+			"sections_uuid": "11005",
+			"sections_title": "art middle ages",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 82.73
+		},
+		{
+			"sections_id": "447",
+			"sections_uuid": "39110",
+			"sections_title": "appld proj mgmt",
+			"sections_instructor": "",
+			"sections_dept": "comm",
+			"sections_year": 1900,
+			"sections_avg": 80.81
+		},
+		{
+			"sections_id": "307",
+			"sections_uuid": "34110",
+			"sections_title": "appl linear algb",
+			"sections_instructor": "donaldson, roger",
+			"sections_dept": "math",
+			"sections_year": 2013,
+			"sections_avg": 64.55
+		},
+		{
+			"sections_id": "310",
+			"sections_uuid": "18110",
+			"sections_title": "animal behaviour",
+			"sections_instructor": "",
+			"sections_dept": "biol",
+			"sections_year": 1900,
+			"sections_avg": 78.28
+		},
+		{
+			"sections_id": "370",
+			"sections_uuid": "51109",
+			"sections_title": "advanced gis",
+			"sections_instructor": "green, arthur",
+			"sections_dept": "geob",
+			"sections_year": 2015,
+			"sections_avg": 80.52
+		},
+		{
+			"sections_id": "370",
+			"sections_uuid": "51110",
+			"sections_title": "advanced gis",
+			"sections_instructor": "",
+			"sections_dept": "geob",
+			"sections_year": 1900,
+			"sections_avg": 80.52
+		},
+		{
+			"sections_id": "542",
+			"sections_uuid": "46110",
+			"sections_title": "adv volcanology",
+			"sections_instructor": "",
+			"sections_dept": "eosc",
+			"sections_year": 1900,
+			"sections_avg": 88.5
+		},
+		{
+			"sections_id": "508",
+			"sections_uuid": "83110",
+			"sections_title": "adv appl clin ph",
+			"sections_instructor": "ensom, mary",
+			"sections_dept": "phar",
+			"sections_year": 2014,
+			"sections_avg": 83.75
+		},
+		{
+			"sections_id": "439",
+			"sections_uuid": "11009",
+			"sections_title": "18 & 19 cent vis",
+			"sections_instructor": "lerner, jillian",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 76.81
+		},
+		{
+			"sections_id": "439",
+			"sections_uuid": "11008",
+			"sections_title": "18 & 19 cent vis",
+			"sections_instructor": "brown, kathryn",
+			"sections_dept": "arth",
+			"sections_year": 2007,
+			"sections_avg": 81
+		},
+		{
+			"sections_id": "439",
+			"sections_uuid": "11010",
+			"sections_title": "18 & 19 cent vis",
+			"sections_instructor": "",
+			"sections_dept": "arth",
+			"sections_year": 1900,
+			"sections_avg": 78.77
+		}
+	]
+}

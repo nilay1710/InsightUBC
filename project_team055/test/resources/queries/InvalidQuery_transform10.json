@@ -1,0 +1,32 @@
+{
+  "title": "invalid key avg cannot be on an skey",
+  "input": {
+
+	  "WHERE": {},
+
+	  "OPTIONS": {
+
+		  "COLUMNS": ["sections_title", "overallAvg"]
+
+	  },
+
+	  "TRANSFORMATIONS": {
+
+		  "GROUP": ["sections_title"],
+
+		  "APPLY": [{
+
+			  "overallAvg": {
+
+				  "AVG": "sections_dept"
+
+			  }
+
+		  }]
+
+	  }
+
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

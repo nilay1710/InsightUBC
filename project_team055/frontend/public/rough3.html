@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Query Builder</title>
+</head>
+<body>
+<h1>Query Builder</h1>
+
+<form>
+	<div class="container" style="display: flex">
+
+	<div id="options" style="width: 50%">
+	<fieldset>
+		<legend>Body</legend>
+		<label for="filter">Filter:</label>
+		<button type="button" id="filter">Add filter</button>
+		<div id="filter-container"></div>
+		<br><br>
+
+	</fieldset>
+
+	<br><br>
+
+	<fieldset>
+		<legend>Options</legend>
+		<label for="columns">Columns:</label>
+		<input type="text" id="columns" name="columns">
+		<br><br>
+		<label for="sort">Sort:</label>
+		<select id="sort" name="sort">
+			<option value="">None</option>
+			<option value="UP">Ascending</option>
+			<option value="DOWN">Descending</option>
+		</select>
+		<input type="text" id="anykey" name="anykey">
+	</fieldset>
+
+	<br><br>
+
+	<fieldset>
+		<legend>Transformations</legend>
+		<button type="button" id="addTransformation">Add Transformation</button>
+		<div id="transformationOptions"></div>
+	</fieldset>
+
+	<br><br>
+
+	<input type="submit" value="Submit">
+	</div>
+		<div id="QueryObj" style="width: 50%; margin-left: 30px"></div>
+	</div>
+</form>
+
+<script>
+	let query = {};
+	const transformationOptions = document.getElementById("transformationOptions");
+	const addTransformationButton = document.getElementById("addTransformation");
+	const addFilterButton = document.getElementById("filter");
+	const filterContainer = document.getElementById("filter-container");
+	const queryObj = document.getElementById("QueryObj");
+
+
+
+	addTransformationButton.addEventListener("click", () => {
+		const applykey = prompt("Enter the applykey:");
+		if (applykey !== null && applykey !== "") {
+			const applytoken = prompt("Enter the applytoken (MAX, MIN, AVG, COUNT, SUM):");
+			if (applytoken !== null && applytoken !== "") {
+				const key = prompt("Enter the key for the applyrule:");
+				if (key !== null && key !== "") {
+					const applyrule = document.createElement("div");
+					applyrule.textContent = `APPLYRULE: { ${applykey}: { ${applytoken}: ${key} } }`;
+					transformationOptions.appendChild(applyrule);
+				}
+			}
+		}
+	});
+
+	addFilterButton.addEventListener("click", () => {
+		const newElement = document.createElement('p');
+		newElement.textContent = 'New Element';
+
+		// Add the new element to the container
+		// filterContainer.appendChild(newElement);
+		const newFilter = document.createElement('div');
+		newFilter.innerHTML = "<label for=\"logic\">Logic:</label>\n" +
+			"\t\t<select id=\"logic\" name=\"logic\">\n" +
+			"\t\t\t<option value=\"NONE\">NONE</option>\n" +
+			"\t\t\t<option value=\"AND\">AND</option>\n" +
+			"\t\t\t<option value=\"OR\">OR</option>\n" +
+			"\t\t</select>\n" +
+			"\t\t<br><br>\n" +
+			"\t\t<label for=\"mcomp\">M-Comparison:</label>\n" +
+			"\t\t<select id=\"mcomp\" name=\"mcomp\">\n" +
+			"\t\t\t<option value=\"LT\">&lt;</option>\n" +
+			"\t\t\t<option value=\"GT\">&gt;</option>\n" +
+			"\t\t\t<option value=\"EQ\">=</option>\n" +
+			"\t\t</select>\n" +
+			"\t\t<input type=\"text\" id=\"mkey\" name=\"mkey\">\n" +
+			"\t\t<input type=\"text\" id=\"number\" name=\"number\">\n" +
+			"\t\t<br><br>\n" +
+			"\t\t<label for=\"scomp\">S-Comparison:</label>\n" +
+			"\t\t<input type=\"text\" id=\"scomp\" name=\"skey\">\n" +
+			"\t\t<input type=\"text\" id=\"inputstring\" name=\"inputstring\">\n" +
+			"\t\t<br><br>\n" +
+			"\t\t<label for=\"negation\">Negation:</label>\n" +
+			"\t\t<input type=\"checkbox\" id=\"negation\" name=\"negation\">"
+
+		filterContainer.appendChild(newFilter);
+
+
+
+
+})
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "title": "invalid key ('msg' is not a key)",
+  "input": {
+    "WHERE": {
+      "GT": {
+        "sections_avg": 92
+      }
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_avg",
+        "sections_msg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

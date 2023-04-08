@@ -1,0 +1,303 @@
+{
+	"title": "COLUMNS_key_matches_key_in_apply",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"averageAvg"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title"
+			],
+			"APPLY": [
+				{
+					"averageAvg": {
+						"AVG": "sections_fail"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		},
+		{
+			"averageAvg": 0
+		}
+	]
+}

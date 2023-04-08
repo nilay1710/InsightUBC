@@ -1,0 +1,91 @@
+/*CITATION: https://www.w3schools.com/css/default.asp
+ USE: used for css styling*/
+
+.adminBigPage{
+	background-color: #E1EFFF;
+	background-image: url("frontEndGraphics/adminPage.jpg");
+	height: 830px;
+	max-width: 1500px;
+}
+
+.heading{
+	font-family: "Times New Roman", serif;
+	font-size: 35px;
+	color: #FFFFFF;
+	position: absolute;
+	left: 110px;
+	top: 175px;
+}
+
+.home {
+	background-color: #ABC3FE;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 250px;
+	top: 130px;
+}
+
+.remove {
+	border-radius: 30px;
+	background-color: #768EF8;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 500px;
+	top: 245px;
+}
+
+.list {
+	border-radius: 30px;
+	background-color: #ABC3FE;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 370px;
+	top: 130px;
+}
+
+.form{
+	text-align: center;
+	font-family: "Avenir Next", serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	position: absolute;
+	left:175px;
+	top: 260px;
+}
+
+.input{
+	border-radius: 10px;
+	height: 25px;
+	position: absolute;
+	left:330px;
+	top: 255px;
+}
+
+.setList{
+	text-align: center;
+	font-family: "Avenir Next", serif;
+	font-size: 20px;
+	color: #FFFFFF;
+	position: absolute;
+	left:200px;
+	top: 300px;
+}

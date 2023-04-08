@@ -1,0 +1,1118 @@
+{
+	"title": "apply_with_MIN_SUM_COUNT",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"Avg",
+				"Max",
+				"Count",
+				"sections_instructor"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_instructor"
+			],
+			"APPLY": [
+				{
+					"Max": {
+						"MIN": "sections_avg"
+					}
+				},
+				{
+					"Avg": {
+						"SUM": "sections_avg"
+					}
+				},
+				{
+					"Count": {
+						"COUNT": "sections_instructor"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"Avg": 96.11,
+			"Max": 96.11,
+			"Count": 1,
+			"sections_instructor": "bishundayal, deonarine"
+		},
+		{
+			"Avg": 382.94,
+			"Max": 95.05,
+			"Count": 1,
+			"sections_instructor": "wassink, berend"
+		},
+		{
+			"Avg": 193.88,
+			"Max": 96.94,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.9,
+			"Max": 96.9,
+			"Count": 1,
+			"sections_instructor": "adelman, sharon"
+		},
+		{
+			"Avg": 96.9,
+			"Max": 96.9,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.15,
+			"Max": 95.15,
+			"Count": 1,
+			"sections_instructor": "hodgson, antony"
+		},
+		{
+			"Avg": 95.15,
+			"Max": 95.15,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.54,
+			"Max": 95.54,
+			"Count": 1,
+			"sections_instructor": "gopaluni, bhushan"
+		},
+		{
+			"Avg": 95.54,
+			"Max": 95.54,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.31,
+			"Max": 95.31,
+			"Count": 1,
+			"sections_instructor": "gopaluni, bhushan"
+		},
+		{
+			"Avg": 95.31,
+			"Max": 95.31,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.27,
+			"Max": 96.27,
+			"Count": 1,
+			"sections_instructor": "ventura, carlos estuardo"
+		},
+		{
+			"Avg": 96.27,
+			"Max": 96.27,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.78,
+			"Max": 95.78,
+			"Count": 1,
+			"sections_instructor": "owens, rhea"
+		},
+		{
+			"Avg": 95.78,
+			"Max": 95.78,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.36,
+			"Max": 95.36,
+			"Count": 1,
+			"sections_instructor": "weinberg, mark"
+		},
+		{
+			"Avg": 95.36,
+			"Max": 95.36,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 99.19,
+			"Max": 99.19,
+			"Count": 1,
+			"sections_instructor": "cox, daniel"
+		},
+		{
+			"Avg": 97.47,
+			"Max": 97.47,
+			"Count": 1,
+			"sections_instructor": "neault, roberta a"
+		},
+		{
+			"Avg": 97.47,
+			"Max": 97.47,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.33,
+			"Max": 96.33,
+			"Count": 1,
+			"sections_instructor": "cox, daniel"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "carter, john"
+		},
+		{
+			"Avg": 96.16,
+			"Max": 96.16,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.36,
+			"Max": 95.36,
+			"Count": 1,
+			"sections_instructor": "munteanu, mircea"
+		},
+		{
+			"Avg": 95.7,
+			"Max": 95.7,
+			"Count": 1,
+			"sections_instructor": "campbell, deborah"
+		},
+		{
+			"Avg": 95.7,
+			"Max": 95.7,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "medved, maureen"
+		},
+		{
+			"Avg": 97,
+			"Max": 97,
+			"Count": 1,
+			"sections_instructor": "campbell, deborah"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "taylor, timothy"
+		},
+		{
+			"Avg": 290,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "maillard, keith"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "galloway, steve"
+		},
+		{
+			"Avg": 98,
+			"Max": 98,
+			"Count": 1,
+			"sections_instructor": "grady, albert wayne"
+		},
+		{
+			"Avg": 95.58,
+			"Max": 95.58,
+			"Count": 1,
+			"sections_instructor": "magee, theresa"
+		},
+		{
+			"Avg": 95.58,
+			"Max": 95.58,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.78,
+			"Max": 95.78,
+			"Count": 1,
+			"sections_instructor": "marker, michael"
+		},
+		{
+			"Avg": 95.78,
+			"Max": 95.78,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.46,
+			"Max": 96.46,
+			"Count": 1,
+			"sections_instructor": "vanwynsberghe, robert"
+		},
+		{
+			"Avg": 96.46,
+			"Max": 96.46,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.5,
+			"Max": 97.5,
+			"Count": 1,
+			"sections_instructor": "morgan, tannis"
+		},
+		{
+			"Avg": 95.16,
+			"Max": 95.16,
+			"Count": 1,
+			"sections_instructor": "adler, james douglas;scott, sandra"
+		},
+		{
+			"Avg": 98.75,
+			"Max": 98.75,
+			"Count": 1,
+			"sections_instructor": "coria, lino"
+		},
+		{
+			"Avg": 98.75,
+			"Max": 98.75,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "porath, marion"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.03,
+			"Max": 96.03,
+			"Count": 1,
+			"sections_instructor": "stockman, james"
+		},
+		{
+			"Avg": 288.08,
+			"Max": 95.15,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.9,
+			"Max": 96.9,
+			"Count": 1,
+			"sections_instructor": "gaster, sean"
+		},
+		{
+			"Avg": 95.15,
+			"Max": 95.15,
+			"Count": 1,
+			"sections_instructor": "romero, amber"
+		},
+		{
+			"Avg": 190.54,
+			"Max": 95.27,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.22,
+			"Max": 95.22,
+			"Count": 1,
+			"sections_instructor": "porath, marion"
+		},
+		{
+			"Avg": 95.22,
+			"Max": 95.22,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.5,
+			"Max": 95.5,
+			"Count": 1,
+			"sections_instructor": "mceachern hughes, tammy"
+		},
+		{
+			"Avg": 95.5,
+			"Max": 95.5,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.67,
+			"Max": 95.67,
+			"Count": 1,
+			"sections_instructor": "levinson, tami"
+		},
+		{
+			"Avg": 95.67,
+			"Max": 95.67,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 390.28,
+			"Max": 96.21,
+			"Count": 1,
+			"sections_instructor": "cole, kenneth"
+		},
+		{
+			"Avg": 195.65,
+			"Max": 97.29,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.21,
+			"Max": 96.21,
+			"Count": 1,
+			"sections_instructor": "ervin, ruth"
+		},
+		{
+			"Avg": 191.34,
+			"Max": 95.13,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.13,
+			"Max": 95.13,
+			"Count": 1,
+			"sections_instructor": "smith, gillian"
+		},
+		{
+			"Avg": 95.47,
+			"Max": 95.47,
+			"Count": 1,
+			"sections_instructor": "champion, kathleen"
+		},
+		{
+			"Avg": 95.47,
+			"Max": 95.47,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 487.85,
+			"Max": 95.47,
+			"Count": 1,
+			"sections_instructor": "grow, laura"
+		},
+		{
+			"Avg": 97.41,
+			"Max": 97.41,
+			"Count": 1,
+			"sections_instructor": "wilk, diana"
+		},
+		{
+			"Avg": 293.06,
+			"Max": 95.72,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.11,
+			"Max": 95.11,
+			"Count": 1,
+			"sections_instructor": "kishor, nand"
+		},
+		{
+			"Avg": 96.23,
+			"Max": 96.23,
+			"Count": 1,
+			"sections_instructor": "porath, marion"
+		},
+		{
+			"Avg": 95.41,
+			"Max": 95.41,
+			"Count": 1,
+			"sections_instructor": "porath, marion"
+		},
+		{
+			"Avg": 95.3,
+			"Max": 95.3,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 98.45,
+			"Max": 98.45,
+			"Count": 1,
+			"sections_instructor": "cannon, joanna"
+		},
+		{
+			"Avg": 98.45,
+			"Max": 98.45,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 191.66,
+			"Max": 95.83,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.33,
+			"Max": 96.33,
+			"Count": 1,
+			"sections_instructor": "mcquarrie, maureen"
+		},
+		{
+			"Avg": 96.33,
+			"Max": 96.33,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 191.14,
+			"Max": 95.14,
+			"Count": 1,
+			"sections_instructor": "kishor, nand"
+		},
+		{
+			"Avg": 95.86,
+			"Max": 95.86,
+			"Count": 1,
+			"sections_instructor": "chan, eric"
+		},
+		{
+			"Avg": 95.86,
+			"Max": 95.86,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 194.78,
+			"Max": 97,
+			"Count": 1,
+			"sections_instructor": "amaral, deborah;ford, laurie"
+		},
+		{
+			"Avg": 97.41,
+			"Max": 97.41,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.69,
+			"Max": 97.69,
+			"Count": 1,
+			"sections_instructor": "grow, laura"
+		},
+		{
+			"Avg": 95.31,
+			"Max": 95.31,
+			"Count": 1,
+			"sections_instructor": "ford, laurie"
+		},
+		{
+			"Avg": 95.31,
+			"Max": 95.31,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.17,
+			"Max": 95.17,
+			"Count": 1,
+			"sections_instructor": "weber, rachel"
+		},
+		{
+			"Avg": 95.17,
+			"Max": 95.17,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 191.34,
+			"Max": 95.44,
+			"Count": 1,
+			"sections_instructor": "wu, amery"
+		},
+		{
+			"Avg": 95.16,
+			"Max": 95.16,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.13,
+			"Max": 95.13,
+			"Count": 1,
+			"sections_instructor": "kishor, nand"
+		},
+		{
+			"Avg": 192.42,
+			"Max": 95.33,
+			"Count": 1,
+			"sections_instructor": "kishor, nand"
+		},
+		{
+			"Avg": 97.09,
+			"Max": 97.09,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.67,
+			"Max": 97.67,
+			"Count": 1,
+			"sections_instructor": "porath, marion"
+		},
+		{
+			"Avg": 286.89,
+			"Max": 95.1,
+			"Count": 1,
+			"sections_instructor": "marker, michael"
+		},
+		{
+			"Avg": 286.89,
+			"Max": 95.1,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.33,
+			"Max": 95.33,
+			"Count": 1,
+			"sections_instructor": "feng, francis"
+		},
+		{
+			"Avg": 95.63,
+			"Max": 95.63,
+			"Count": 1,
+			"sections_instructor": "petrina, stephen"
+		},
+		{
+			"Avg": 191.15,
+			"Max": 95.19,
+			"Count": 1,
+			"sections_instructor": "milner-bolotin, marina"
+		},
+		{
+			"Avg": 191.15,
+			"Max": 95.19,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.4,
+			"Max": 96.4,
+			"Count": 1,
+			"sections_instructor": "wenzek, rob"
+		},
+		{
+			"Avg": 96.4,
+			"Max": 96.4,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.36,
+			"Max": 96.36,
+			"Count": 1,
+			"sections_instructor": "timko, joleen"
+		},
+		{
+			"Avg": 96.36,
+			"Max": 96.36,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 381.1,
+			"Max": 95.26,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 382.84,
+			"Max": 95.36,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.1,
+			"Max": 96.1,
+			"Count": 1,
+			"sections_instructor": "farrell, adam"
+		},
+		{
+			"Avg": 96.1,
+			"Max": 96.1,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.44,
+			"Max": 96.44,
+			"Count": 1,
+			"sections_instructor": "karu, kalle"
+		},
+		{
+			"Avg": 96.44,
+			"Max": 96.44,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.67,
+			"Max": 95.67,
+			"Count": 1,
+			"sections_instructor": "murugan, mathav"
+		},
+		{
+			"Avg": 95.67,
+			"Max": 95.67,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.25,
+			"Max": 96.25,
+			"Count": 1,
+			"sections_instructor": "wei, juncheng"
+		},
+		{
+			"Avg": 96.25,
+			"Max": 96.25,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.25,
+			"Max": 97.25,
+			"Count": 1,
+			"sections_instructor": "fraser, ailana"
+		},
+		{
+			"Avg": 97.25,
+			"Max": 97.25,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 99.78,
+			"Max": 99.78,
+			"Count": 1,
+			"sections_instructor": "gomez, jose"
+		},
+		{
+			"Avg": 99.78,
+			"Max": 99.78,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.48,
+			"Max": 97.48,
+			"Count": 1,
+			"sections_instructor": "karu, kalle"
+		},
+		{
+			"Avg": 97.48,
+			"Max": 97.48,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.56,
+			"Max": 95.56,
+			"Count": 1,
+			"sections_instructor": "gordon, julia yulia"
+		},
+		{
+			"Avg": 95.56,
+			"Max": 95.56,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.09,
+			"Max": 97.09,
+			"Count": 1,
+			"sections_instructor": "laba, izabella"
+		},
+		{
+			"Avg": 97.09,
+			"Max": 97.09,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.83,
+			"Max": 96.83,
+			"Count": 1,
+			"sections_instructor": "nachmias, asaf"
+		},
+		{
+			"Avg": 96.83,
+			"Max": 96.83,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.33,
+			"Max": 96.33,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.5,
+			"Max": 96.5,
+			"Count": 1,
+			"sections_instructor": "mcrae, lorna"
+		},
+		{
+			"Avg": 96.5,
+			"Max": 96.5,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.59,
+			"Max": 96.59,
+			"Count": 1,
+			"sections_instructor": "veiga, marcello"
+		},
+		{
+			"Avg": 95.18,
+			"Max": 95.18,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.43,
+			"Max": 95.43,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 191.04,
+			"Max": 95.44,
+			"Count": 1,
+			"sections_instructor": "dunbar, w scott"
+		},
+		{
+			"Avg": 96.25,
+			"Max": 96.25,
+			"Count": 1,
+			"sections_instructor": "dixon, david"
+		},
+		{
+			"Avg": 96.25,
+			"Max": 96.25,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.38,
+			"Max": 95.38,
+			"Count": 1,
+			"sections_instructor": "girard, jonathan"
+		},
+		{
+			"Avg": 95.67,
+			"Max": 95.67,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.5,
+			"Max": 96.5,
+			"Count": 1,
+			"sections_instructor": "girard, jonathan"
+		},
+		{
+			"Avg": 96.5,
+			"Max": 96.5,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 194.14,
+			"Max": 95.43,
+			"Count": 1,
+			"sections_instructor": "brew, nancy"
+		},
+		{
+			"Avg": 482.77,
+			"Max": 95.13,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 98.21,
+			"Max": 98.21,
+			"Count": 1,
+			"sections_instructor": "krist, jennifer"
+		},
+		{
+			"Avg": 95.13,
+			"Max": 95.13,
+			"Count": 1,
+			"sections_instructor": "harding, jillian"
+		},
+		{
+			"Avg": 95.29,
+			"Max": 95.29,
+			"Count": 1,
+			"sections_instructor": "krist, jennifer;mccuaig, fairleth"
+		},
+		{
+			"Avg": 96.64,
+			"Max": 96.64,
+			"Count": 1,
+			"sections_instructor": "krist, jennifer"
+		},
+		{
+			"Avg": 489.83,
+			"Max": 96.64,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 196.03,
+			"Max": 97.53,
+			"Count": 1,
+			"sections_instructor": "burrows, marlene;harding, jillian;krist, jennifer;mccuaig, fairleth"
+		},
+		{
+			"Avg": 96.73,
+			"Max": 96.73,
+			"Count": 1,
+			"sections_instructor": "burrows, marlene"
+		},
+		{
+			"Avg": 194.06,
+			"Max": 96.73,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 97.33,
+			"Max": 97.33,
+			"Count": 1,
+			"sections_instructor": "brew, nancy"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.07,
+			"Max": 95.07,
+			"Count": 1,
+			"sections_instructor": "lalji, fawziah;seto, katherine"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "jackson, howard"
+		},
+		{
+			"Avg": 190.74,
+			"Max": 95.37,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.43,
+			"Max": 95.43,
+			"Count": 1,
+			"sections_instructor": "stamp, philip c"
+		},
+		{
+			"Avg": 95.43,
+			"Max": 95.43,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.47,
+			"Max": 96.47,
+			"Count": 1,
+			"sections_instructor": "dorcey, anthony h j"
+		},
+		{
+			"Avg": 96.47,
+			"Max": 96.47,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": "de longis, anita"
+		},
+		{
+			"Avg": 96,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.75,
+			"Max": 95.75,
+			"Count": 1,
+			"sections_instructor": "sochting, ingrid"
+		},
+		{
+			"Avg": 95.75,
+			"Max": 95.75,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.25,
+			"Max": 95.25,
+			"Count": 1,
+			"sections_instructor": "wagner, john"
+		},
+		{
+			"Avg": 95.25,
+			"Max": 95.25,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 193,
+			"Max": 96,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.93,
+			"Max": 95.93,
+			"Count": 1,
+			"sections_instructor": "gill, deana"
+		},
+		{
+			"Avg": 192.08,
+			"Max": 95.93,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 96.15,
+			"Max": 96.15,
+			"Count": 1,
+			"sections_instructor": "bryson, stephanie;o'connor, deborah;stainton, timothy;sullivan, t richard;tester, frank"
+		},
+		{
+			"Avg": 96.09,
+			"Max": 96.09,
+			"Count": 1,
+			"sections_instructor": "gill, deana"
+		},
+		{
+			"Avg": 96.96,
+			"Max": 96.96,
+			"Count": 1,
+			"sections_instructor": "frankish, charles james"
+		},
+		{
+			"Avg": 95.76,
+			"Max": 95.76,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 98.98,
+			"Max": 98.98,
+			"Count": 1,
+			"sections_instructor": "frank, erica"
+		},
+		{
+			"Avg": 98.98,
+			"Max": 98.98,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.11,
+			"Max": 95.11,
+			"Count": 1,
+			"sections_instructor": "sobolev, boris"
+		},
+		{
+			"Avg": 96.8,
+			"Max": 96.8,
+			"Count": 1,
+			"sections_instructor": "kishchenko, svetlana"
+		},
+		{
+			"Avg": 96.8,
+			"Max": 96.8,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.75,
+			"Max": 95.75,
+			"Count": 1,
+			"sections_instructor": "pourbohloul, babak"
+		},
+		{
+			"Avg": 95.75,
+			"Max": 95.75,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.09,
+			"Max": 95.09,
+			"Count": 1,
+			"sections_instructor": "frankish, charles james"
+		},
+		{
+			"Avg": 95.09,
+			"Max": 95.09,
+			"Count": 1,
+			"sections_instructor": ""
+		},
+		{
+			"Avg": 95.2,
+			"Max": 95.2,
+			"Count": 1,
+			"sections_instructor": "mclean, jayson"
+		},
+		{
+			"Avg": 95.2,
+			"Max": 95.2,
+			"Count": 1,
+			"sections_instructor": ""
+		}
+	]
+}

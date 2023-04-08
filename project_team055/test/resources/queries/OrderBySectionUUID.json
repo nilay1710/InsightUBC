@@ -1,0 +1,269 @@
+{
+	"title": "Order by Section UUID",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"GT": {
+								"sections_year": 2014
+							}
+						},
+						{
+							"LT": {
+								"sections_avg": 90
+							}
+						}
+					]
+				},
+				{
+					"EQ": {
+						"sections_pass": 50
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_uuid",
+				"sections_avg"
+			],
+			"ORDER": "sections_uuid"
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "baac",
+			"sections_uuid": "10911",
+			"sections_avg": 78.66
+		},
+		{
+			"sections_dept": "bama",
+			"sections_uuid": "13323",
+			"sections_avg": 79.62
+		},
+		{
+			"sections_dept": "bahr",
+			"sections_uuid": "14311",
+			"sections_avg": 80.92
+		},
+		{
+			"sections_dept": "poli",
+			"sections_uuid": "16554",
+			"sections_avg": 54.01
+		},
+		{
+			"sections_dept": "poli",
+			"sections_uuid": "16578",
+			"sections_avg": 80.7
+		},
+		{
+			"sections_dept": "poli",
+			"sections_uuid": "17028",
+			"sections_avg": 65.09
+		},
+		{
+			"sections_dept": "germ",
+			"sections_uuid": "1779",
+			"sections_avg": 85.8
+		},
+		{
+			"sections_dept": "germ",
+			"sections_uuid": "1781",
+			"sections_avg": 80.8
+		},
+		{
+			"sections_dept": "mtrl",
+			"sections_uuid": "1855",
+			"sections_avg": 71.21
+		},
+		{
+			"sections_dept": "mtrl",
+			"sections_uuid": "1865",
+			"sections_avg": 72.74
+		},
+		{
+			"sections_dept": "mtrl",
+			"sections_uuid": "1880",
+			"sections_avg": 69.2
+		},
+		{
+			"sections_dept": "astr",
+			"sections_uuid": "23080",
+			"sections_avg": 68.5
+		},
+		{
+			"sections_dept": "ba",
+			"sections_uuid": "30262",
+			"sections_avg": 80.34
+		},
+		{
+			"sections_dept": "ba",
+			"sections_uuid": "30280",
+			"sections_avg": 83.46
+		},
+		{
+			"sections_dept": "basc",
+			"sections_uuid": "31376",
+			"sections_avg": 82.22
+		},
+		{
+			"sections_dept": "asia",
+			"sections_uuid": "32319",
+			"sections_avg": 70.35
+		},
+		{
+			"sections_dept": "law",
+			"sections_uuid": "34711",
+			"sections_avg": 72.82
+		},
+		{
+			"sections_dept": "engl",
+			"sections_uuid": "37269",
+			"sections_avg": 82.37
+		},
+		{
+			"sections_dept": "comm",
+			"sections_uuid": "38955",
+			"sections_avg": 74.36
+		},
+		{
+			"sections_dept": "asia",
+			"sections_uuid": "39505",
+			"sections_avg": 73.17
+		},
+		{
+			"sections_dept": "phys",
+			"sections_uuid": "406",
+			"sections_avg": 68.96
+		},
+		{
+			"sections_dept": "apsc",
+			"sections_uuid": "40815",
+			"sections_avg": 79.7
+		},
+		{
+			"sections_dept": "bapa",
+			"sections_uuid": "51364",
+			"sections_avg": 80.86
+		},
+		{
+			"sections_dept": "fren",
+			"sections_uuid": "52930",
+			"sections_avg": 70.98
+		},
+		{
+			"sections_dept": "bama",
+			"sections_uuid": "60398",
+			"sections_avg": 78.84
+		},
+		{
+			"sections_dept": "cpsc",
+			"sections_uuid": "62361",
+			"sections_avg": 78.98
+		},
+		{
+			"sections_dept": "cpsc",
+			"sections_uuid": "62429",
+			"sections_avg": 73.73
+		},
+		{
+			"sections_dept": "baac",
+			"sections_uuid": "68025",
+			"sections_avg": 79.62
+		},
+		{
+			"sections_dept": "eosc",
+			"sections_uuid": "70568",
+			"sections_avg": 85.38
+		},
+		{
+			"sections_dept": "eosc",
+			"sections_uuid": "70602",
+			"sections_avg": 81.9
+		},
+		{
+			"sections_dept": "eosc",
+			"sections_uuid": "70639",
+			"sections_avg": 83.4
+		},
+		{
+			"sections_dept": "kin",
+			"sections_uuid": "72608",
+			"sections_avg": 81.16
+		},
+		{
+			"sections_dept": "kin",
+			"sections_uuid": "72665",
+			"sections_avg": 80.61
+		},
+		{
+			"sections_dept": "kin",
+			"sections_uuid": "72698",
+			"sections_avg": 75.8
+		},
+		{
+			"sections_dept": "econ",
+			"sections_uuid": "74366",
+			"sections_avg": 64.12
+		},
+		{
+			"sections_dept": "fmst",
+			"sections_uuid": "75982",
+			"sections_avg": 72.92
+		},
+		{
+			"sections_dept": "thtr",
+			"sections_uuid": "84577",
+			"sections_avg": 72.88
+		},
+		{
+			"sections_dept": "busi",
+			"sections_uuid": "87439",
+			"sections_avg": 65.48
+		},
+		{
+			"sections_dept": "busi",
+			"sections_uuid": "87500",
+			"sections_avg": 73.85
+		},
+		{
+			"sections_dept": "sowk",
+			"sections_uuid": "88815",
+			"sections_avg": 85.62
+		},
+		{
+			"sections_dept": "math",
+			"sections_uuid": "90085",
+			"sections_avg": 59
+		},
+		{
+			"sections_dept": "math",
+			"sections_uuid": "90149",
+			"sections_avg": 76.26
+		},
+		{
+			"sections_dept": "bafi",
+			"sections_uuid": "90834",
+			"sections_avg": 87.82
+		},
+		{
+			"sections_dept": "bapa",
+			"sections_uuid": "90864",
+			"sections_avg": 82.08
+		},
+		{
+			"sections_dept": "basc",
+			"sections_uuid": "92524",
+			"sections_avg": 84.1
+		},
+		{
+			"sections_dept": "babs",
+			"sections_uuid": "98479",
+			"sections_avg": 87.24
+		}
+	]
+}

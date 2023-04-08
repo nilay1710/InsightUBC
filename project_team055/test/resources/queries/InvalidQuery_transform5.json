@@ -1,0 +1,32 @@
+{
+  "title": "Invalid: sections is wrong, it needs a key",
+  "input": {
+
+	  "WHERE": {},
+
+	  "OPTIONS": {
+
+		  "COLUMNS": ["sections_title", "overallAvg"]
+
+	  },
+
+	  "TRANSFORMATIONS": {
+
+		  "GROUP": ["sections_title"],
+
+		  "APPLY": [{
+
+			  "overallAvg": {
+
+				  "AVG": "sections"
+
+			  }
+
+		  }]
+
+	  }
+
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

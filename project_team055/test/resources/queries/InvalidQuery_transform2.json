@@ -1,0 +1,32 @@
+{
+  "title": "APPL is not correct",
+  "input": {
+
+	  "WHERE": {},
+
+	  "OPTIONS": {
+
+		  "COLUMNS": ["sections_title", "overallAvg"]
+
+	  },
+
+	  "TRANSFORMATIONS": {
+
+		  "GROUP": ["sections_title"],
+
+		  "APPL": [{
+
+			  "overallAvg": {
+
+				  "AVG": "sections_avg"
+
+			  }
+
+		  }]
+
+	  }
+
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

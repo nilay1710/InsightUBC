@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Page</title>
+	<link rel="stylesheet" href="studentPage.css" />
+</head>
+<body>
+<div style="background-color: #847CF4; width: 1420px; height: 200000px">
+<div class="adminBigPage" style="display: flex">
+	<h1 class="heading">What query would you like to make today?</h1>
+<div style="width: 50%">
+	<form>
+		<label for="query" class="form"> <b>Query </b></label>
+		<textarea type="text" id="query" name="filter" class="input"></textarea>
+		<button type="button" id="refresh" class="refresh">Refresh Query</button>
+		<button type="button" id="performQuery" class="performQuery">Perform Query</button>
+	</form>
+	<button onclick="goToMain()" class="home">Home</button>
+	<div id="input" style="width: 50%">
+	</div>
+	<p class="setList" id="setList"></p>
+</div>
+</div>
+</div>
+<script>
+	let query = {}; // the main query object to be passed in performQuery in string form
+	const queryInput = document.getElementById("query");
+	const displayinput = document.getElementById("input")
+	const RefreshButton = document.getElementById("refresh")
+	const performQuery = document.getElementById("performQuery")
+
+	performQuery.addEventListener("click", () => {
+		if (queryInput.value === "") {
+			alert("Error: Enter a Value");
+
+		} else {
+			query = queryInput.value
+			// console.log(query);
+		}
+		performQ();
+	})
+
+	// CITATION: https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started
+	//			 https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/send
+	// USE: used to format POST request for server
+	function performQ() {
+		const httpReq = new XMLHttpRequest();
+		httpReq.onreadystatechange = () => {
+			// process response from server-->
+			if (httpReq.readyState === XMLHttpRequest.DONE) {
+				if (httpReq.status === 200) {
+					// EFFECTS: receives a list of insight results and returns it in html form
+					// CITATION: https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
+					// USE: used to create a new html element
+					let htmlString = "";
+					// CITATION: https://www.tutorialspoint.com/typescript/typescript_strings.htm
+					//           https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
+					// USE: used for string operations (concat, split)
+					for(const insightResult of JSON.parse(httpReq.response).result) {
+						// split up result and format it
+						let stringResult = JSON.stringify(insightResult)
+						let strList = stringResult.split("\n");
+						let newStr = "".concat(strList)
+						htmlString = htmlString + newStr + '<br> <br>';
+					}
+					document.getElementById("setList").innerHTML = htmlString;
+				}
+				} else if (httpReq.status === 400){
+					document.getElementById("setList").innerHTML = "<b> Oh no! <br> It seems like you have entered an invalid query, please try again </b>";
+				}
+			}
+		httpReq.open("POST", "http://localhost:4321/query");
+		httpReq.setRequestHeader(
+			"Content-Type",
+			"application/json"
+		);
+		httpReq.send(query);
+	}
+
+
+	RefreshButton.addEventListener("click", () => {
+		query = {};
+		displayinput.textContent = "";
+		queryInput.value = "";
+		document.getElementById("setList").innerHTML = "";
+	})
+	function goToMain() {
+		window.location.href = "index.html";
+	}
+
+
+</script>
+</body>
+</html>
+

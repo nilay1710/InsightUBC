@@ -1,0 +1,32 @@
+{
+	"title": "invalid_Transformation_operator",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"LatSum",
+				"rooms_lat"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_lat"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_lat"
+			],
+			"APPLY": [
+				{
+					"LatSum": {
+						"Sum": "rooms_lat"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,43 @@
+{
+	"title": "apply_MIN_with_wrong_type",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"Min",
+				"Sum",
+				"Count",
+				"sections_instructor"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_instructor"
+			],
+			"APPLY": [
+				{
+					"Min": {
+						"MIN": "sections_instructor"
+					}
+				},
+				{
+					"Sum": {
+						"SUM": "sections_avg"
+					}
+				},
+				{
+					"Count": {
+						"COUNT": "sections_instructor"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,747 @@
+{
+  "title": "it is valid",
+  "input": {
+	  "WHERE": {
+		  "OR": [
+			  {
+				  "AND": [
+					  {
+						  "GT": {
+							  "sections_pass": 80
+						  }
+					  },
+					  {
+						  "LT": {
+							  "sections_pass": 81
+						  }
+					  }
+				  ]
+			  },
+			  {
+				  "EQ": {
+					  "sections_pass": 57
+				  }
+			  }
+		  ]
+	  },
+	  "OPTIONS": {
+		  "COLUMNS": [
+			  "sections_title",
+			  "sections_dept"
+		  ],
+		  "ORDER": {
+			  "dir": "UP",
+			  "keys": [
+				  "sections_dept"
+			  ]
+		  }
+	  },
+	  "TRANSFORMATIONS": {
+		  "GROUP": [
+			  "sections_dept",
+			  "sections_title"
+
+		  ],
+		  "APPLY": []
+	  }
+  },
+  "errorExpected": false,
+  "expected": [
+	  {
+		  "sections_title": "cntmpry theories",
+		  "sections_dept": "arch"
+	  },
+	  {
+		  "sections_title": "eur arch",
+		  "sections_dept": "arth"
+	  },
+	  {
+		  "sections_title": "mod/pmod art chi",
+		  "sections_dept": "arth"
+	  },
+	  {
+		  "sections_title": "northcoast peo",
+		  "sections_dept": "arth"
+	  },
+	  {
+		  "sections_title": "chin lit trns:vr",
+		  "sections_dept": "asia"
+	  },
+	  {
+		  "sections_title": "chinese cinema",
+		  "sections_dept": "asia"
+	  },
+	  {
+		  "sections_title": "sanskrit cosmop",
+		  "sections_dept": "asia"
+	  },
+	  {
+		  "sections_title": "issues arts&sci",
+		  "sections_dept": "asic"
+	  },
+	  {
+		  "sections_title": "can,japn&pc poli",
+		  "sections_dept": "astu"
+	  },
+	  {
+		  "sections_title": "commun busns prj",
+		  "sections_dept": "ba"
+	  },
+	  {
+		  "sections_title": "ethics&sustnblty",
+		  "sections_dept": "ba"
+	  },
+	  {
+		  "sections_title": "glbl iss&macecon",
+		  "sections_dept": "ba"
+	  },
+	  {
+		  "sections_title": "decision making",
+		  "sections_dept": "ba"
+	  },
+	  {
+		  "sections_title": "cost anl dec mkg",
+		  "sections_dept": "baac"
+	  },
+	  {
+		  "sections_title": "fndtns  accnting",
+		  "sections_dept": "baac"
+	  },
+	  {
+		  "sections_title": "tech entrprnrshp",
+		  "sections_dept": "baen"
+	  },
+	  {
+		  "sections_title": "fund entrpreneur",
+		  "sections_dept": "baen"
+	  },
+	  {
+		  "sections_title": "2 party negotns",
+		  "sections_dept": "bahr"
+	  },
+	  {
+		  "sections_title": "info tech mgmt",
+		  "sections_dept": "bait"
+	  },
+	  {
+		  "sections_title": "commercial law",
+		  "sections_dept": "bala"
+	  },
+	  {
+		  "sections_title": "mrkt research",
+		  "sections_dept": "bama"
+	  },
+	  {
+		  "sections_title": "oper & log",
+		  "sections_dept": "bams"
+	  },
+	  {
+		  "sections_title": "govrnt & busness",
+		  "sections_dept": "bapa"
+	  },
+	  {
+		  "sections_title": "intr lgstcs&oprt",
+		  "sections_dept": "basc"
+	  },
+	  {
+		  "sections_title": "supply chain mng",
+		  "sections_dept": "basc"
+	  },
+	  {
+		  "sections_title": "intr modern bio",
+		  "sections_dept": "biol"
+	  },
+	  {
+		  "sections_title": "cell & orgsml bio",
+		  "sections_dept": "biol"
+	  },
+	  {
+		  "sections_title": "animal behaviour",
+		  "sections_dept": "biol"
+	  },
+	  {
+		  "sections_title": "zoogeography",
+		  "sections_dept": "biol"
+	  },
+	  {
+		  "sections_title": "intr fncl acct",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "cost accounting",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "business finc",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "intr busnss law",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "com prop anal",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "assess admin",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "intm fnc acct ii",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "case appraisl ii",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "adv accounting",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "prin audit",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "incom prop study",
+		  "sections_dept": "busi"
+	  },
+	  {
+		  "sections_title": "org chem lab",
+		  "sections_dept": "chem"
+	  },
+	  {
+		  "sections_title": "integ chem lab i",
+		  "sections_dept": "chem"
+	  },
+	  {
+		  "sections_title": "basic chin ii 2",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "ad chin r&wr i",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "adv chin r&wr ii",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "class chin 1",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "class chin 2",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "clas poet tang",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "mod chin lit 1",
+		  "sections_dept": "chin"
+	  },
+	  {
+		  "sections_title": "ancient greece",
+		  "sections_dept": "clst"
+	  },
+	  {
+		  "sections_title": "ancient history",
+		  "sections_dept": "clst"
+	  },
+	  {
+		  "sections_title": "greek religion",
+		  "sections_dept": "clst"
+	  },
+	  {
+		  "sections_title": "career counselng",
+		  "sections_dept": "cnps"
+	  },
+	  {
+		  "sections_title": "fmly ed & consul",
+		  "sections_dept": "cnps"
+	  },
+	  {
+		  "sections_title": "int thry counsel",
+		  "sections_dept": "cnps"
+	  },
+	  {
+		  "sections_title": "guid pln dcsn mk",
+		  "sections_dept": "cnps"
+	  },
+	  {
+		  "sections_title": "psnl soc dv adlt",
+		  "sections_dept": "cnps"
+	  },
+	  {
+		  "sections_title": "log&ops managmnt",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "appl stat in bus",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "intro marketing",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "intro to finance",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "intro to e-busi",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "commercial law",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "busi process&ops",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "negotiation",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "ship&intn'l log",
+		  "sections_dept": "comm"
+	  },
+	  {
+		  "sections_title": "conservat'n biol",
+		  "sections_dept": "cons"
+	  },
+	  {
+		  "sections_title": "aborignl forestr",
+		  "sections_dept": "cons"
+	  },
+	  {
+		  "sections_title": "fish cons/mgmt",
+		  "sections_dept": "cons"
+	  },
+	  {
+		  "sections_title": "intro comp sys",
+		  "sections_dept": "cpsc"
+	  },
+	  {
+		  "sections_title": "softwr eng proj",
+		  "sections_dept": "cpsc"
+	  },
+	  {
+		  "sections_title": "dentistry lv",
+		  "sections_dept": "dent"
+	  },
+	  {
+		  "sections_title": "econ data",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "wea pov nation",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "poverty&ineqalty",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "mtds empirc resr",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "fer/fam/hum mig",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "econ hist us",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "nonrenew resrces",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "macro economics",
+		  "sections_dept": "econ"
+	  },
+	  {
+		  "sections_title": "rsc trd edu admn",
+		  "sections_dept": "edst"
+	  },
+	  {
+		  "sections_title": "language & curr",
+		  "sections_dept": "educ"
+	  },
+	  {
+		  "sections_title": "lit brit 18c+",
+		  "sections_dept": "engl"
+	  },
+	  {
+		  "sections_title": "tech writing",
+		  "sections_dept": "engl"
+	  },
+	  {
+		  "sections_title": "exper techniques",
+		  "sections_dept": "enph"
+	  },
+	  {
+		  "sections_title": "eng phys prj1",
+		  "sections_dept": "enph"
+	  },
+	  {
+		  "sections_title": "eng phys prj ii",
+		  "sections_dept": "enph"
+	  },
+	  {
+		  "sections_title": "ocean environmnt",
+		  "sections_dept": "eosc"
+	  },
+	  {
+		  "sections_title": "ocean ecosystem",
+		  "sections_dept": "eosc"
+	  },
+	  {
+		  "sections_title": "sedimentology",
+		  "sections_dept": "eosc"
+	  },
+	  {
+		  "sections_title": "intro fish scien",
+		  "sections_dept": "eosc"
+	  },
+	  {
+		  "sections_title": "lrn'g disablties",
+		  "sections_dept": "epse"
+	  },
+	  {
+		  "sections_title": "typ atyp inf/ch",
+		  "sections_dept": "epse"
+	  },
+	  {
+		  "sections_title": "des tech",
+		  "sections_dept": "etec"
+	  },
+	  {
+		  "sections_title": "intr mtn pct dir",
+		  "sections_dept": "fipr"
+	  },
+	  {
+		  "sections_title": "plan&prof practc",
+		  "sections_dept": "fipr"
+	  },
+	  {
+		  "sections_title": "human sexuality",
+		  "sections_dept": "fmst"
+	  },
+	  {
+		  "sections_title": "nutr conc & cont",
+		  "sections_dept": "fnh"
+	  },
+	  {
+		  "sections_title": "nu met imp hlth",
+		  "sections_dept": "fnh"
+	  },
+	  {
+		  "sections_title": "beginner fren i",
+		  "sections_dept": "fren"
+	  },
+	  {
+		  "sections_title": "intermed fren 1",
+		  "sections_dept": "fren"
+	  },
+	  {
+		  "sections_title": "silviculture",
+		  "sections_dept": "frst"
+	  },
+	  {
+		  "sections_title": "intl forestry",
+		  "sections_dept": "frst"
+	  },
+	  {
+		  "sections_title": "changing envr",
+		  "sections_dept": "geob"
+	  },
+	  {
+		  "sections_title": "cartography",
+		  "sections_dept": "geob"
+	  },
+	  {
+		  "sections_title": "intr remote sens",
+		  "sections_dept": "geob"
+	  },
+	  {
+		  "sections_title": "globl climt syst",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "thry&prac h geog",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "urbanztn glb sth",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "intr econ geog",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "geog econ devlop",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "res str hum geog",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "statistics geog",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "the arctic",
+		  "sections_dept": "geog"
+	  },
+	  {
+		  "sections_title": "grm lit 1900-45",
+		  "sections_dept": "germ"
+	  },
+	  {
+		  "sections_title": "gender relations",
+		  "sections_dept": "grsj"
+	  },
+	  {
+		  "sections_title": "cont glbl issues",
+		  "sections_dept": "hist"
+	  },
+	  {
+		  "sections_title": "eur late mid-age",
+		  "sections_dept": "hist"
+	  },
+	  {
+		  "sections_title": "int rel grt pwrs",
+		  "sections_dept": "hist"
+	  },
+	  {
+		  "sections_title": "hist holocaust",
+		  "sections_dept": "hist"
+	  },
+	  {
+		  "sections_title": "intm japn i a",
+		  "sections_dept": "japn"
+	  },
+	  {
+		  "sections_title": "sport&exer psyc",
+		  "sections_dept": "kin"
+	  },
+	  {
+		  "sections_title": "high perf cond",
+		  "sections_dept": "kin"
+	  },
+	  {
+		  "sections_title": "spt, peace, cnfl",
+		  "sections_dept": "kin"
+	  },
+	  {
+		  "sections_title": "modern olympics",
+		  "sections_dept": "kin"
+	  },
+	  {
+		  "sections_title": "conflict of laws",
+		  "sections_dept": "law"
+	  },
+	  {
+		  "sections_title": "family law",
+		  "sections_dept": "law"
+	  },
+	  {
+		  "sections_title": "administratv law",
+		  "sections_dept": "law"
+	  },
+	  {
+		  "sections_title": "creditors' remed",
+		  "sections_dept": "law"
+	  },
+	  {
+		  "sections_title": "real estate tran",
+		  "sections_dept": "law"
+	  },
+	  {
+		  "sections_title": "land food comm 2",
+		  "sections_dept": "lfs"
+	  },
+	  {
+		  "sections_title": "lang of world",
+		  "sections_dept": "ling"
+	  },
+	  {
+		  "sections_title": "lang acquisition",
+		  "sections_dept": "ling"
+	  },
+	  {
+		  "sections_title": "df calc ap ph sc",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "int calc ap lf s",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "int calc ap c&ss",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "calculus 3",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "math proof",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "ord diff equtns",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "intr stoch proc",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "intro lin prog",
+		  "sections_dept": "math"
+	  },
+	  {
+		  "sections_title": "eng concepts ii",
+		  "sections_dept": "mech"
+	  },
+	  {
+		  "sections_title": "fluid mechanics",
+		  "sections_dept": "mech"
+	  },
+	  {
+		  "sections_title": "ventltn&occ hlth",
+		  "sections_dept": "mine"
+	  },
+	  {
+		  "sections_title": "min plant feas",
+		  "sections_dept": "mine"
+	  },
+	  {
+		  "sections_title": "met thermodyn ii",
+		  "sections_dept": "mtrl"
+	  },
+	  {
+		  "sections_title": "hydrometalrgy i",
+		  "sections_dept": "mtrl"
+	  },
+	  {
+		  "sections_title": "mech beh matls",
+		  "sections_dept": "mtrl"
+	  },
+	  {
+		  "sections_title": "plymr&p matrx cp",
+		  "sections_dept": "mtrl"
+	  },
+	  {
+		  "sections_title": "monitor & optimz",
+		  "sections_dept": "mtrl"
+	  },
+	  {
+		  "sections_title": "prnc muscl form",
+		  "sections_dept": "musc"
+	  },
+	  {
+		  "sections_title": "diatnc hrmny&vce",
+		  "sections_dept": "musc"
+	  },
+	  {
+		  "sections_title": "fndtns nurs prac",
+		  "sections_dept": "nurs"
+	  },
+	  {
+		  "sections_title": "clin pharcknetcs",
+		  "sections_dept": "phar"
+	  },
+	  {
+		  "sections_title": "intro philosophy",
+		  "sections_dept": "phil"
+	  },
+	  {
+		  "sections_title": "scientifc reason",
+		  "sections_dept": "phil"
+	  },
+	  {
+		  "sections_title": "phil after 1800",
+		  "sections_dept": "phil"
+	  },
+	  {
+		  "sections_title": "intro phys lab",
+		  "sections_dept": "phys"
+	  },
+	  {
+		  "sections_title": "statistical mech",
+		  "sections_dept": "phys"
+	  },
+	  {
+		  "sections_title": "intro to politic",
+		  "sections_dept": "poli"
+	  },
+	  {
+		  "sections_title": "cur poli thought",
+		  "sections_dept": "poli"
+	  },
+	  {
+		  "sections_title": "bc governmt&poli",
+		  "sections_dept": "poli"
+	  },
+	  {
+		  "sections_title": "ca prsp hmn rght",
+		  "sections_dept": "poli"
+	  },
+	  {
+		  "sections_title": "infancy",
+		  "sections_dept": "psyc"
+	  },
+	  {
+		  "sections_title": "health psycholgy",
+		  "sections_dept": "psyc"
+	  },
+	  {
+		  "sections_title": "int sem in sw th",
+		  "sections_dept": "sowk"
+	  },
+	  {
+		  "sections_title": "intr sowk resrch",
+		  "sections_dept": "sowk"
+	  },
+	  {
+		  "sections_title": "convers span i",
+		  "sections_dept": "span"
+	  },
+	  {
+		  "sections_title": "intro prob&stats",
+		  "sections_dept": "stat"
+	  },
+	  {
+		  "sections_title": "intr probability",
+		  "sections_dept": "stat"
+	  },
+	  {
+		  "sections_title": "dsgn&anl expermt",
+		  "sections_dept": "stat"
+	  },
+	  {
+		  "sections_title": "elem swedish 1",
+		  "sections_dept": "swed"
+	  },
+	  {
+		  "sections_title": "studio theory i",
+		  "sections_dept": "visa"
+	  },
+	  {
+		  "sections_title": "globlzn&sustainb",
+		  "sections_dept": "wood"
+	  }
+  ]
+}

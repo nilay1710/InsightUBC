@@ -1,0 +1,93 @@
+/*CITATION: https://www.w3schools.com/css/default.asp
+ USE: used for css styling*/
+
+.adminBigPage{
+	background-color: #E1EFFF;
+	background-image: url("frontEndGraphics/studentPage.jpg");
+	height: 830px;
+	max-width: 1500px;
+}
+
+.heading{
+	font-family: "Times New Roman", serif;
+	font-size: 35px;
+	color: #FFFFFF;
+	position: absolute;
+	left: 150px;
+	top: 100px;
+}
+
+.home {
+	background-color: #ABC3FE;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 290px;
+	top: 180px;
+}
+
+.refresh {
+	border-radius: 30px;
+	background-color: #ABC3FE;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left: 450px;
+	top: 180px;
+}
+
+.performQuery {
+	border-radius: 30px;
+	background-color: #EC716A;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	position: absolute;
+	left:470px;
+	top: 520px;
+}
+
+.form{
+	text-align: center;
+	font-family: "Times New Roman", serif;
+	font-size: 25px;
+	color: #D6E6F8;
+	position: absolute;
+	left:240px;
+	top: 260px;
+}
+
+.input{
+	border-radius: 10px;
+	height: 200px;
+	width: 400px;
+	position: absolute;
+	left:240px;
+	top: 300px;
+}
+
+.setList{
+	text-align: center;
+	font-family: "Times New Roman", Sathu;
+	font-size: 20px;
+	color: #FFFFFF;
+	position: absolute;
+	width: 400px;
+	left: 250px;
+	top: 650px;
+}

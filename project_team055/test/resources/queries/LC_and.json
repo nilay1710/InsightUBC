@@ -1,0 +1,49 @@
+{
+  "title": "logic comparision - and",
+  "input": {
+    "WHERE": {
+      "AND": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "sections_avg": 50
+              }
+            },
+            {
+              "IS": {
+                "sections_dept": "*a*"
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "sections_avg": 95
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_dept",
+        "sections_id",
+        "sections_avg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "sections_dept": "math",
+      "sections_id": "532",
+      "sections_avg": 95
+    },
+    {
+      "sections_dept": "math",
+      "sections_id": "532",
+      "sections_avg": 95
+    }
+  ]
+}

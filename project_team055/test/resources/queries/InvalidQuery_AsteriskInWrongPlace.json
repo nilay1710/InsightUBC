@@ -1,0 +1,56 @@
+{
+	"title": "Invalid Query - Asterisk In the Middle",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"AND": [
+								{
+									"AND": [
+										{
+											"IS": {
+												"sections_dept": "cp*sc"
+											}
+										},
+										{
+											"IS": {
+												"sections_id": "11*0"
+											}
+										}
+									]
+								},
+								{
+									"IS": {
+										"sections_instructor": "kicz*ales, gregor"
+									}
+								}
+							]
+						},
+						{
+							"IS": {
+								"sections_title": "comptn, *progrmng"
+							}
+						}
+					]
+				},
+				{
+					"IS": {
+						"sections_uuid": "12*48"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

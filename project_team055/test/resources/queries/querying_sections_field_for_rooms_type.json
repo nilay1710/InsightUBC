@@ -1,0 +1,39 @@
+{
+	"title": "querying_sections_field_for_rooms_type",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"LatSum",
+				"rooms_uuid"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_lat",
+					"LatSum"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_lat",
+				"rooms_lon"
+			],
+			"APPLY": [
+				{
+					"LatSum": {
+						"SUM": "rooms_lat"
+					}
+				},
+				{
+					"LatSum": {
+						"COUNT": "rooms_shortname"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

@@ -1,0 +1,37 @@
+{
+	"title": "invalid_sort_order_type",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"roomHref",
+				"rooms_href",
+				"rooms_lat"
+			],
+			"ORDER": [
+				"rooms_lat",
+				"rooms_href"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_lat",
+				"rooms_href"
+			],
+			"APPLY": [
+				{
+					"LatSum": {
+						"SUM": "rooms_lat"
+					}
+				},
+				{
+					"roomHref": {
+						"COUNT": "rooms_href"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

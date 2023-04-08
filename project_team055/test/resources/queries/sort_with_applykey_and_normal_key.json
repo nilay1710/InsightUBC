@@ -1,0 +1,202 @@
+{
+	"title": "sort_with_applykey_and_normal_key",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"LatSum",
+				"rooms_lat"
+			],
+			"ORDER": {
+				"dir": "UP",
+				"keys": [
+					"rooms_lat",
+					"LatSum"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_lat"
+			],
+			"APPLY": [
+				{
+					"LatSum": {
+						"SUM": "rooms_lat"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"LatSum": 492.6,
+			"rooms_lat": 49.26044
+		},
+		{
+			"LatSum": 147.78,
+			"rooms_lat": 49.26047
+		},
+		{
+			"LatSum": 1034.47,
+			"rooms_lat": 49.26048
+		},
+		{
+			"LatSum": 935.96,
+			"rooms_lat": 49.26114
+		},
+		{
+			"LatSum": 246.31,
+			"rooms_lat": 49.26125
+		},
+		{
+			"LatSum": 443.36,
+			"rooms_lat": 49.26176
+		},
+		{
+			"LatSum": 49.26,
+			"rooms_lat": 49.26207
+		},
+		{
+			"LatSum": 197.05,
+			"rooms_lat": 49.26228
+		},
+		{
+			"LatSum": 541.89,
+			"rooms_lat": 49.26229
+		},
+		{
+			"LatSum": 147.79,
+			"rooms_lat": 49.26236
+		},
+		{
+			"LatSum": 295.58,
+			"rooms_lat": 49.26273
+		},
+		{
+			"LatSum": 147.79,
+			"rooms_lat": 49.26274
+		},
+		{
+			"LatSum": 1083.78,
+			"rooms_lat": 49.26293
+		},
+		{
+			"LatSum": 49.26,
+			"rooms_lat": 49.26372
+		},
+		{
+			"LatSum": 1083.81,
+			"rooms_lat": 49.26398
+		},
+		{
+			"LatSum": 394.11,
+			"rooms_lat": 49.264
+		},
+		{
+			"LatSum": 295.58,
+			"rooms_lat": 49.26414
+		},
+		{
+			"LatSum": 295.59,
+			"rooms_lat": 49.2642
+		},
+		{
+			"LatSum": 344.85,
+			"rooms_lat": 49.2643
+		},
+		{
+			"LatSum": 788.24,
+			"rooms_lat": 49.26478
+		},
+		{
+			"LatSum": 197.06,
+			"rooms_lat": 49.26479
+		},
+		{
+			"LatSum": 1379.42,
+			"rooms_lat": 49.26486
+		},
+		{
+			"LatSum": 98.53,
+			"rooms_lat": 49.26517
+		},
+		{
+			"LatSum": 49.27,
+			"rooms_lat": 49.26541
+		},
+		{
+			"LatSum": 197.06,
+			"rooms_lat": 49.26545
+		},
+		{
+			"LatSum": 295.6,
+			"rooms_lat": 49.2659
+		},
+		{
+			"LatSum": 394.13,
+			"rooms_lat": 49.26605
+		},
+		{
+			"LatSum": 49.27,
+			"rooms_lat": 49.266089
+		},
+		{
+			"LatSum": 197.06,
+			"rooms_lat": 49.2661
+		},
+		{
+			"LatSum": 295.6,
+			"rooms_lat": 49.26627
+		},
+		{
+			"LatSum": 98.53,
+			"rooms_lat": 49.2663
+		},
+		{
+			"LatSum": 394.13,
+			"rooms_lat": 49.266463
+		},
+		{
+			"LatSum": 98.53,
+			"rooms_lat": 49.2666
+		},
+		{
+			"LatSum": 886.82,
+			"rooms_lat": 49.26766
+		},
+		{
+			"LatSum": 295.61,
+			"rooms_lat": 49.26767
+		},
+		{
+			"LatSum": 3005.36,
+			"rooms_lat": 49.26826
+		},
+		{
+			"LatSum": 147.8,
+			"rooms_lat": 49.2683
+		},
+		{
+			"LatSum": 98.54,
+			"rooms_lat": 49.26862
+		},
+		{
+			"LatSum": 197.07,
+			"rooms_lat": 49.26867
+		},
+		{
+			"LatSum": 197.08,
+			"rooms_lat": 49.26958
+		},
+		{
+			"LatSum": 246.35,
+			"rooms_lat": 49.2699
+		},
+		{
+			"LatSum": 98.54,
+			"rooms_lat": 49.27106
+		}
+	]
+}

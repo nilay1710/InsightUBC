@@ -1,0 +1,11 @@
+{
+  "title": "Invalid query - no columns",
+  "input": {
+    "WHERE": {},
+    "OPTIONS": {
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

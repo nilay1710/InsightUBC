@@ -1,0 +1,39 @@
+{
+	"title": "empty_applykey",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"LatSum",
+				"rooms_lat"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"rooms_lat",
+					"LatSum"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_lat",
+				"rooms_lon"
+			],
+			"APPLY": [
+				{
+					"LatSum": {
+						"SUM": "rooms_lat"
+					}
+				},
+				{
+					"": {
+						"COUNT": "rooms_shortname"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

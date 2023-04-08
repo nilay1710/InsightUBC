@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Query Builder</title>
+</head>
+<body>
+<h1>Query Builder</h1>
+<form>
+	<label for="query">QUERY:</label>
+	<input type="text" id="query" name="filter">
+	<button type="button" id="queryButton">Add query</button>
+	<button type="button" id="refresh">Refresh Query</button>
+	<div id="input">
+
+	</div>
+
+</form>
+<script>
+	let query = {}; // the main query object to be passed in performQuery in string form
+	const queryInput = document.getElementById("query");
+	const Addbutton = document.getElementById("queryButton");
+	const displayinput = document.getElementById("input")
+	const RefreshButton = document.getElementById("refresh")
+
+	Addbutton.addEventListener("click", () => {
+		if (queryInput.value === "") {
+			alert("Error: Enter a Value");
+
+		} else {
+			query = queryInput.value;
+
+
+			displayinput.textContent = convertToHtmlList();
+		}
+
+	})
+
+	RefreshButton.addEventListener("click", () => {
+		query = {};
+		displayinput.textContent = "";
+		queryInput.value = "";
+	})
+
+	function convertToHtmlList() {
+		// {id: "new-dataset", kind: "sections", numRows: 60}
+		// let htmlString = "";
+		// for(const insightResult of result) {
+		// 	htmlString = htmlString + "<b>id: </b>" + insightResult.id + "\n";
+		// 	htmlString = htmlString + "<b>kind: </b>" + insightResult.kind + "\n";
+		// 	htmlString = htmlString + "<b>Number of Rows: </b>" + insightResult.numRows + "\n";
+		// }
+		return "heloo";
+	}
+</script>
+</body>
+</html>

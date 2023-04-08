@@ -1,0 +1,18 @@
+{
+	"title": "Wrong type used in mcomparison (used string instead of number)",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_fail": "110"
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_avg"
+			],
+			"ORDER": "sections_avg"
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

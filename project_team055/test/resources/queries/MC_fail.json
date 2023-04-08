@@ -1,0 +1,69 @@
+{
+  "title": "mcomparision - fail",
+  "input": {
+    "WHERE": {
+      "OR": [
+        {
+          "AND": [
+            {
+              "GT": {
+                "sections_fail": 80
+              }
+            },
+            {
+              "LT": {
+                "sections_fail": 81
+              }
+            }
+          ]
+        },
+        {
+          "EQ": {
+            "sections_fail": 57
+          }
+        }
+      ]
+    },
+    "OPTIONS": {
+      "COLUMNS": [
+        "sections_dept",
+        "sections_id",
+        "sections_avg"
+      ],
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": false,
+  "expected": [
+    {
+      "sections_dept": "chem",
+      "sections_id": "121",
+      "sections_avg": 61.44
+    },
+    {
+      "sections_dept": "chem",
+      "sections_id": "233",
+      "sections_avg": 61.71
+    },
+    {
+      "sections_dept": "chem",
+      "sections_id": "233",
+      "sections_avg": 62.55
+    },
+    {
+      "sections_dept": "chem",
+      "sections_id": "233",
+      "sections_avg": 62.95
+    },
+    {
+      "sections_dept": "engl",
+      "sections_id": "112",
+      "sections_avg": 72.02
+    },
+    {
+      "sections_dept": "cpsc",
+      "sections_id": "110",
+      "sections_avg": 75.36
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+	"title": "order_with_one_applykey_and_one_skey",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"LatSum",
+				"rooms_lat",
+				"countBuilding"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"countBuilding",
+					"rooms_lat"
+				]
+			}
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"rooms_lat"
+			],
+			"APPLY": [
+				{
+					"LatSum": {
+						"SUM": "rooms_lat"
+					}
+				},
+				{
+					"countBuilding": {
+						"COUNT": "rooms_shortname"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"LatSum": 197.05,
+			"rooms_lat": 49.26228,
+			"countBuilding": 2
+		},
+		{
+			"LatSum": 443.36,
+			"rooms_lat": 49.26176,
+			"countBuilding": 2
+		},
+		{
+			"LatSum": 98.54,
+			"rooms_lat": 49.27106,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 246.35,
+			"rooms_lat": 49.2699,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 197.08,
+			"rooms_lat": 49.26958,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 197.07,
+			"rooms_lat": 49.26867,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 98.54,
+			"rooms_lat": 49.26862,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 147.8,
+			"rooms_lat": 49.2683,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 3005.36,
+			"rooms_lat": 49.26826,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 295.61,
+			"rooms_lat": 49.26767,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 886.82,
+			"rooms_lat": 49.26766,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 98.53,
+			"rooms_lat": 49.2666,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 394.13,
+			"rooms_lat": 49.266463,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 98.53,
+			"rooms_lat": 49.2663,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 295.6,
+			"rooms_lat": 49.26627,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 197.06,
+			"rooms_lat": 49.2661,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 49.27,
+			"rooms_lat": 49.266089,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 394.13,
+			"rooms_lat": 49.26605,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 295.6,
+			"rooms_lat": 49.2659,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 197.06,
+			"rooms_lat": 49.26545,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 49.27,
+			"rooms_lat": 49.26541,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 98.53,
+			"rooms_lat": 49.26517,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 1379.42,
+			"rooms_lat": 49.26486,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 197.06,
+			"rooms_lat": 49.26479,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 788.24,
+			"rooms_lat": 49.26478,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 344.85,
+			"rooms_lat": 49.2643,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 295.59,
+			"rooms_lat": 49.2642,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 295.58,
+			"rooms_lat": 49.26414,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 394.11,
+			"rooms_lat": 49.264,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 1083.81,
+			"rooms_lat": 49.26398,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 49.26,
+			"rooms_lat": 49.26372,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 1083.78,
+			"rooms_lat": 49.26293,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 147.79,
+			"rooms_lat": 49.26274,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 295.58,
+			"rooms_lat": 49.26273,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 147.79,
+			"rooms_lat": 49.26236,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 541.89,
+			"rooms_lat": 49.26229,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 49.26,
+			"rooms_lat": 49.26207,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 246.31,
+			"rooms_lat": 49.26125,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 935.96,
+			"rooms_lat": 49.26114,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 1034.47,
+			"rooms_lat": 49.26048,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 147.78,
+			"rooms_lat": 49.26047,
+			"countBuilding": 1
+		},
+		{
+			"LatSum": 492.6,
+			"rooms_lat": 49.26044,
+			"countBuilding": 1
+		}
+	]
+}

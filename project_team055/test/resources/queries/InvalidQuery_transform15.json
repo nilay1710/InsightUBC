@@ -1,0 +1,66 @@
+{
+  "title": "invalid : rooms_number is not in columns",
+  "input": {
+
+	  "WHERE": {
+
+		  "AND": [{
+
+			  "IS": {
+
+				  "rooms_furniture": "*Tables*"
+
+			  }
+
+		  }, {
+
+			  "GT": {
+
+				  "rooms_seats": 300
+
+			  }
+
+		  }]
+
+	  },
+
+	  "OPTIONS": {
+
+		  "COLUMNS": [
+
+			  "rooms_shortname",
+
+			  "maxSeats"
+
+		  ],
+
+		  "ORDER": {
+
+			  "dir": "DOWN",
+
+			  "keys": ["maxSeats", "rooms_number"]
+
+		  }
+
+	  },
+
+	  "TRANSFORMATIONS": {
+
+		  "GROUP": ["rooms_shortname"],
+
+		  "APPLY": [{
+
+			  "maxSeats": {
+
+				  "MAX": "rooms_seats"
+
+			  }
+
+		  }]
+
+	  }
+
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

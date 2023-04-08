@@ -1,0 +1,12 @@
+{
+	"title": "missing OPTIONS",
+	"input": {
+		"WHERE": {
+			"IS": {
+				"sections_id": "110"
+			}
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

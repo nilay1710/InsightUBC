@@ -1,0 +1,13 @@
+{
+  "title": "Negation - scomparison",
+  "input": {
+    "GT": {
+      "sections_avg": 92
+    },
+    "OPTIONS": {
+      "ORDER": "sections_avg"
+    }
+  },
+  "errorExpected": true,
+  "expected": "InsightError"
+}

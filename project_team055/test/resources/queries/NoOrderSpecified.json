@@ -1,0 +1,71 @@
+{
+	"title": "No Specified Order",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"AND": [
+						{
+							"AND": [
+								{
+									"AND": [
+										{
+											"IS": {
+												"sections_dept": "c*"
+											}
+										},
+										{
+											"IS": {
+												"sections_id": "1*"
+											}
+										}
+									]
+								},
+								{
+									"IS": {
+										"sections_instructor": "kiczales*"
+									}
+								}
+							]
+						},
+						{
+							"IS": {
+								"sections_title": "comptn*"
+							}
+						}
+					]
+				},
+				{
+					"IS": {
+						"sections_uuid": "12*"
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"sections_dept",
+				"sections_id",
+				"sections_avg"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"sections_dept": "cpsc",
+			"sections_id": "110",
+			"sections_avg": 71.07
+		},
+		{
+			"sections_dept": "cpsc",
+			"sections_id": "110",
+			"sections_avg": 73.13
+		},
+		{
+			"sections_dept": "cpsc",
+			"sections_id": "110",
+			"sections_avg": 85.11
+		}
+	]
+}

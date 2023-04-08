@@ -1,0 +1,42 @@
+{
+	"title": "apply_key_empty",
+	"input": {
+		"WHERE": {
+			"GT": {
+				"sections_avg": 95
+			}
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"Min",
+				"Sum",
+				"sections_instructor"
+			]
+		},
+		"TRANSFORMATIONS": {
+			"GROUP": [
+				"sections_title",
+				"sections_instructor"
+			],
+			"APPLY": [
+				{
+					"Min": {
+						"MIN": "sections_instructor"
+					}
+				},
+				{
+					"Sum": {
+						"SUM": "sections_avg"
+					}
+				},
+				{
+					"": {
+						"COUNT": "sections_instructor"
+					}
+				}
+			]
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

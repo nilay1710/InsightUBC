@@ -1,0 +1,47 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--	<head>-->
+<!--		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>-->
+<!--		<title>310 Frontend</title>-->
+<!--		<link href="/style.css" rel="stylesheet" />-->
+<!--	</head>-->
+<!--	<body>-->
+<!--		<button id="click-me-button" class="button" >Click Me!</button>-->
+
+<!--		<script type="text/javascript" src="/frontend.js"></script>-->
+<!--	</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Screen</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="bigPage">
+	<div>
+		<img src="frontEndGraphics/logo.jpg" class="logo">
+		<h1 class="heading1">
+			Welcome to Insight Facade
+		</h1>
+		<button class="admin" onclick="openPage('studentPage')">Student</button>
+		<button class="student" onclick="openPage('adminPage')">Admin</button>
+	</div>
+</div>
+<script>
+	// when the front page loads, add the sections and rooms dataset immediately (no prompting required)
+	function openPage(pageName) {
+		const password = prompt("Enter password:");
+		// Check password and redirect to page
+		if ((pageName === "studentPage" && password === "student") || (pageName === "adminPage" && password === "admin")) {
+			window.location.href = pageName + ".html";
+		} else {
+			alert("Incorrect password. Please try again.");
+		}
+	}
+</script>
+<script src="frontend.js"></script>
+</body>
+</html>

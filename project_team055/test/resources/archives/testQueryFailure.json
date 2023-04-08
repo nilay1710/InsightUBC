@@ -1,0 +1,13 @@
+{
+	"WHERE": {
+		"GT": {
+			"ubc_avg": 92
+		}
+	},
+	"OPTIONS": {
+		"COLUMNS": [
+			"ubc_avg"
+		],
+		"ORDER": "ubc_avg"
+	}
+}

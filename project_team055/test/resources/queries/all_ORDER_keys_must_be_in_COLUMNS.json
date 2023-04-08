@@ -1,0 +1,19 @@
+{
+	"title": "All_ORDER_keys_must_be_in_COLUMNS",
+	"input": {
+		"WHERE": {},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_shortname"
+			],
+			"ORDER": {
+				"dir": "DOWN",
+				"keys": [
+					"maxSeats"
+				]
+			}
+		}
+	},
+	"errorExpected": true,
+	"expected": "InsightError"
+}

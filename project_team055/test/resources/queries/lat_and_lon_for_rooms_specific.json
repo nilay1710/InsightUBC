@@ -1,0 +1,36 @@
+{
+	"title": "lat_and_lon_for_rooms_specific",
+	"input": {
+		"WHERE": {
+			"AND": [
+				{
+					"EQ": {
+						"rooms_lat": 49.2666
+					}
+				},
+				{
+					"EQ": {
+						"rooms_lon": -123.25655
+					}
+				}
+			]
+		},
+		"OPTIONS": {
+			"COLUMNS": [
+				"rooms_lat",
+				"rooms_lon"
+			]
+		}
+	},
+	"errorExpected": false,
+	"expected": [
+		{
+			"rooms_lat": 49.2666,
+			"rooms_lon": -123.25655
+		},
+		{
+			"rooms_lat": 49.2666,
+			"rooms_lon": -123.25655
+		}
+	]
+}
