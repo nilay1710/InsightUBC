@@ -10,7 +10,7 @@ The project includes:
 
 ## 🎬 Demo Preview
 
-![UBC Course Explorer Demo](gif.gif)
+![UBC Course Explorer Demo](project_team055/frontend/gif.gif)
 
 
 ##  Live Demo
