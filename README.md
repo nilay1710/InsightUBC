@@ -8,22 +8,45 @@ The project includes:
 
 ---
 
+## 🎬 Demo Preview
+
+![UBC Course Explorer Demo](gif.gif)
+
+
 ##  Live Demo
 
 
 **Example query:**
 ```json
 {
-  "WHERE": { "IS": { "sections_dept": "cpsc*" } },
+  "WHERE": {
+        "AND": [
+          {
+            "LT": {
+              "sections_avg": 80
+            }
+          },
+          {
+            "IS": {
+              "sections_dept": "phil"
+            }
+          }
+        ]
+      },
   "OPTIONS": {
-    "COLUMNS": ["sections_dept", "sections_avg"],
+    "COLUMNS": [
+      "sections_dept",
+      "sections_id",
+      "sections_avg"
+    ],
     "ORDER": "sections_avg"
   }
 }
+
 ```
+## 🎥 Full Demo Video
 
-<img width="1309" height="626" alt="insightFacade" src="https://github.com/user-attachments/assets/b63c6cd8-652b-4627-bdf1-21cb1d57ac92" />
-
+▶️ [Watch the 2-minute demo](https://drive.google.com/file/d/1yJBpFkY0_vYoaI6qGXkgVxOIYJxVRLXP/view?usp=sharing)
 
 ---
 
